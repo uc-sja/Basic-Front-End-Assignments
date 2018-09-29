@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Data Source</title>
+	</head>
+	<body>
+		<form name="data_source_form" id="data_source_form">
+			<ul>
+				<li>Databases</li>
+				<li>Queries</li>
+				<li>OLAP Cubes</li>
+			</ul>
+			<div>
+				<select name="database_select" id="database_select" size="10">
+					<option value="1" selected="selected">&lt;New Data Source&gt;</option>
+					<option value="2">dBASE Files*</option>
+					<option value="3">Excel Files*</option>
+					<option value="4">MS Access Database*</option>
+				</select>
+			</div>
+			<div>
+				<span>
+					<img src="image/data_source.png" alt="data_source.png" />
+				</span>
+				<span>
+					<input type="checkbox" name="query_checkbox" id="query_checkbox" value="query" checked="checked" />
+					<label for="query_checkbox">Use the Query Wizard to create/edit queries</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+				<span>
+					<input type="file" name="browse_file" id="browse_file" />
+				</span>
+				<span>
+					<button type="button" name="options_button" id="options_button">Options...</button>
+				</span>
+				<span>
+					<button type="button" name="delete_button" id="delete_button" disabled="disabled">Delete</button>
+				</span>
+			</div>			
+		</form>
+	</body>
+</html>

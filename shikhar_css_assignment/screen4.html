@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Format Cells</title>
+		<link style="text/css" rel="stylesheet" href="screen4.css" />
+	</head>
+	<body>
+		<form name="format_cells_form" id="format_cells_form">
+			<div class="main">
+				<div class="title_head">
+					<span class="title_txt">Format Cells</span>	
+					<span class="close_btn rt">
+						<a><img  src="image/close11.png" alt="close.png" /></a><!--
+					 --><a><img  src="image/close12.png" alt="close.png" /></a>
+					</span>
+				</div>
+				<div class="sub_main">
+					<ul class="menu_tab margin_lt">
+						<li class="tab1">Number</li>
+						<li class="tab2"><div class="tab_dotted">Alignment</div></li>
+						<li class="tab3">Font</li>
+						<li class="tab4">Border</li>
+						<li class="tab5">Fill</li>
+						<li class="tab6">Protection</li>
+					</ul>
+					<div class="inner_container margin_ltt">
+						<fieldset class="orient rt">
+							<legend class="margin_lt">Orientation</legend>
+							<div class="images text_img">
+								<img src="image/text.png" alt="text.png" />
+							</div>
+							<div class="degrees">
+								<input type="number" class="degree_number margin_left" name="degree_number" id="degree_number" value="0" min="0" max="360" accesskey="d" />
+								<label for="degree_number"><u>D</u>egrees</label>
+							</div>
+						</fieldset>
+						<fieldset class="fit">
+							<legend>Text alignment</legend>
+						</fieldset>
+						<div class="user_choice">
+							<div class="indent rt">
+								<label class="indent_text" for="indent_number">Indent:</label>
+								<input type="number" class="indent_number" name="indent_number" id="indent_number" value="0" min="0" max="100" />
+							</div>
+							<div class="horizon">
+								<label class="horizontal" for="horizontal_select"><u>H</u>orizontal:</label>
+								<select name="horizontal_select" id="horizontal_select" class="horizon_select appear" accesskey="h">
+									<option value="1">General</option>
+								</select>
+							</div>								
+							<div class="vertical">
+								<label class="ver" for="vertical_select"><u>V</u>ertical:</label>
+								<select name="vertical_select" id="vertical_select" class="ver_select appear" accesskey="h">
+									<option value="1">Bottom</option>
+								</select>
+							</div>
+							<div class="justify">
+								<input type="checkbox" class="checkbox_design justify_checkbox appear" name="justify_checkbox" id="justify_checkbox" value="justify" disabled="disabled" />
+								<label class="justify_text" for="justify_checkbox">Justify distributed</label>
+							</div>
+						</div>
+						<fieldset class="fit">
+							<legend>Text control</legend>
+						</fieldset>
+						<div class="user_control">
+							<div class="wrap">
+								<input type="checkbox" class="checkbox_design wrap_checkbox appear" name="wrap_checkbox" id="wrap_checkbox" value="wrap" />			
+								<label for="wrap_checkbox"><u>W</u>rap text</label>
+							</div>
+							<div class="shrink">
+								<input type="checkbox" class="checkbox_design shrink_checkbox appear" name="shrink_checkbox" id="shrink_checkbox" value="shrink" />			
+								<label for="shrink_checkbox">Shrin<u>k</u> to fit</label>
+							</div>
+							<div class="merge">
+								<input type="checkbox" class="checkbox_design merge_checkbox appear" name="merge_checkbox" id="merge_checkbox" value="merge" />			
+								<label for="merge_checkbox"><u>M</u>erge cells</label>
+							</div>
+						</div>
+						<fieldset class="fit">
+							<legend>Right-to-left</legend>
+						</fieldset>
+						<div class="rtl">
+							<div class="context">
+								<label for="text_dir_select"><u>T</u>ext direction:</label>
+								<select class="text_dir_select appear" name="text_dir_select" id="text_dir_select" accesskey="t">
+									<option value="1">Context</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="btn_group rt">
+						<span>
+							<button type="button" name="ok_button" id="ok_button" class="bttn font_wt ok_button" autofocus="autofocus">OK</button>
+						</span>
+						<span>
+							<button type="button" name="cancel_button" id="cancel_button" class="bttn font_wt cancel_button">Cancel</button>					
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

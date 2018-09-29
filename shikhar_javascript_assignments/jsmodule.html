@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Module</title>
+        <link href="js_module_style.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <canvas onclick="info()" id="myCanvas" class="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;"></canvas>
+        <div class="button_align">    
+            <button onclick="startTimer()" class="btn" type="button">Start</button>
+            <button onclick='canvasShape("0","500px","500px");' type="button" value="On Square" class="btn click_button" name="square_button" id="square_button">Square</button>
+            <button onclick='canvasShape("50%","500px","500px");' type="button" value="On Circle" class="btn click_button" name="circle_button" id="circle_button">Circle</button>
+            <button onclick='canvasShape("0","700px","500px");' type="button" value="On Rectangle" class="btn click_button" name="rect_button" id="rect_button">Rectangle</button>
+            <button onclick="clickCount()" class="btn" type="button" name="history_button" id="history_button">History</button>
+        </div>
+        <script src="js_module.js"> </script>
+    </body>
+</html>
+        

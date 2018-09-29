@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Printed Watermark</title>
+	</head>
+	<body>
+		<form name="printed_mark_form" id="printed_mark_form">
+			<div>
+				<input type="radio" name="watermark_radio" id="no_watermark_radio" value="no_watermark" accesskey="n" />
+				<label for="no_watermark_radio"><u>N</u>o watermark</label>
+			</div>
+			<div>
+				<input type="radio" name="watermark_radio" id="picture_watermark_radio" value="picture_watermark" accesskey="i" />
+				<label for="picture_watermark_radio">P<u>i</u>cture watermark</label>
+			</div>
+			<div>	
+				<input type="file" name="select_picture_image" id="select_picture_image" disabled="disabled" />
+			</div>
+			<div>
+				<span>
+					<label for="auto_select">Scale:</label>
+				</span>
+				<span>
+					<select name="auto_select" id="auto_select" disabled="disabled">
+						<option value="1" selected="selected">Auto</option>
+					</select>
+				</span>
+				<span>
+					<input type="checkbox" name="washout_checkbox" id="washout_checkbox" value="washout" checked="checked" disabled="disabled" />
+					<label for="washout_checkbox">Washout</label>
+				</span>
+			</div>
+			<div>	
+				<input type="radio" name="watermark_radio" id="text_water_radio" value="text_water" accesskey="x" checked="checked" />
+				<label for="text_water_radio">Te<u>x</u>t watermark</label>
+			</div>
+			<div>
+				<span>
+					<label for="language_select"><u>L</u>anguage:</label>
+				</span>
+				<span>
+					<select name="language_select" id="language_select" accesskey="l">
+						<option value="1">English (United States)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="text_select"><u>T</u>ext:</label>
+				</span>
+				<span>
+					<select name="text_select" id="text_select" accesskey="t">
+						<option value="1">ASAP</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="font_select"><u>F</u>ont:</label>
+				</span>
+				<span>
+					<select name="font_select" id="font_select" accesskey="f">
+						<option value="1">Calibri</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="size_select"><u>S</u>ize:</label>
+				</span>
+				<span>
+					<select name="size_select" id="size_select" accesskey="s">
+						<option value="1">Auto</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="watermark_color"><u>C</u>olor:</label>
+					<input type="color" name="watermark_color" id="watermark_color" value="#C0C0C0" accesskey="c" />
+				</span>
+				<span>
+					<input type="checkbox" name="semi_trans_checkbox" id="semi_trans_checkbox" value="semi_trans" checked="checked" accesskey="e" />
+					<label for="semi_trans_checkbox">S<u>e</u>mitransparent</label>
+				</span>
+			</div>
+			<div>
+				<span>Layout:</span>
+				<span>
+					<input type="radio" name="layout_radio" id="diagonal_radio" value="diagonal" checked="checked" accesskey="d" />
+					<label for="diagonal_radio"><u>D</u>iagonal</label>
+				</span>
+				<span>
+					<input type="radio" name="layout_radio" id="horizontal_radio" value="horizontal" accesskey="h" />
+					<label for="horizontal_radio"><u>H</u>orizontal</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="apply_button" id="apply_button" accesskey="a"><u>A</u>pply</button>
+				</span>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" >OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: roboto-bold;
+  src: url("Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url("Roboto-Regular.ttf");
+}
+
+@mixin set_font_family($font_name) {
+  font-family: $font-name;
+}
+
+@mixin set_width($width) {
+  width: $width;
+}
+
+@mixin dimension($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin set_background($background) {
+  background: $background;
+}
+
+@mixin set_color($color) {
+  color: $color;
+}
+
+@mixin set_opacity($opacity) {
+  opacity: $opacity;
+}
+
+@mixin set_transition($prop, $time, $timing) {
+  -webkit-transition: $prop $time $timing;  
+  -moz-transition: $prop $time $timing;  
+  transition: $prop $time $timing;  
+}
+
+@mixin set-back($back) {
+  background-color: $back;
+}
+
+@mixin transform($trans) {
+  transform: $trans;
+}
+
+@mixin pos($position, $top: "", $right: "", $bottom: "", $left: "") {
+  position: $position;
+  top: #{ $top };
+  right: #{ $right };
+  bottom: #{ $bottom };
+  left: #{ $left };
+}
+
+.hide_over {
+  overflow: hidden;
+}
+
+.no_spacing {
+  margin: 0;
+  padding: 0;  
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+    display: block;
+}
+
+.outer_div {
+  @include dimension(300px, 100%);
+  .main_div {
+    margin-bottom: 200px;
+    border: 2px solid black;
+  }
+}
+
+.bottom_border {
+  border-bottom: 2px solid red;
+}
+
+.position_rel {
+  position:relative;
+}
+
+.unstyle {
+  @include set_background(#00BCD4);
+  @include set_width(100%);
+  @extend .no_spacing;
+  list-style-type: none;
+  @extend .hide_over;
+
+  li {
+    @include set_font_family(roboto-bold);
+    text-align: center;
+    font-size: 14px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }  
+}
+
+.common_tab {
+  @include set_color(#AAE9F1);
+  @include pos(relative);
+  @extend .hide_over;
+}
+
+.tab_first,.tab_second {  
+  display: inline-block;
+  @extend .hide_over;
+  float: left;
+  width: 50%;
+}
+
+.tab_content,.tab_content_two {
+  @extend .hide;
+  padding: 6px 12px;
+  @include set_font_family("roboto-regular");
+}
+
+.tab_border {
+  @include pos(relative);
+  @set_width(100%);
+  @include set_transition(left, 0.5s, ease-in-out);
+  @extend .bottom_border;
+  left: 100%;
+}
+
+.tab_borders {
+  @include pos(relative);
+  @set_width(100%);
+  @include set_transition(left, 0.5s, ease-in-out);
+  @extend .bottom_border;
+  left: 0;
+}
+
+.tab_border_second {
+  @extend .tab_border;
+}
+
+.tab_borders_second {
+  @extend .tab_borders;
+}
+
+.active {
+  @include set_color(#fff);
+}
+
+.ripple {
+  border-radius: 100%;
+  @include set-back(rgba(211, 211, 211, 0.9));
+  @include transform(scale(1,0));
+  @include pos(absolute);
+}
+
+.rippleEffect {
+  animation: rippleDrop 0.5s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    @include transform(scale(1.5,3));
+    opacity: 0;
+  }
+}

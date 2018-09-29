@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<title>Assignment2</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="popover"]').popover({container: 'body'});
+				$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+			});
+		</script>
+	</head>
+	<body>
+		<form name="panel_form" id="panel_form">
+			<div class="container-fluid">
+				<div class="page-header">
+					<h1>Panel and Wells</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">Default Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">Primary Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-success">
+							<div class="panel-heading">Success Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">			
+					<div class="col-sm-4">
+						<div class="panel panel-info">
+							<div class="panel-heading">Info Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-warning">
+							<div class="panel-heading">Warning Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-danger">
+							<div class="panel-heading">Danger Panel</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+								Lorem ipsum dolor sit Lorem ipsum dolor sit
+							</div>
+							<div class="panel-footer">Panel Footer</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Basic Tabs</div>
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+									<li><a href="#profile" data-toggle="tab">Profile</a></li>
+									<li><a href="#messages" data-toggle="tab">Messages</a></li>
+									<li><a href="#settings" data-toggle="tab">Settings</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="home">
+										<h4>Home tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="profile">
+										<h4>Profile tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="messages">
+										<h4>Messages tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="settings">
+										<h4>Settings tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Pill Tabs</div>
+							<div class="panel-body">
+								<ul class="nav nav-pills">
+									<li class="active"><a href="#home_two" data-toggle="tab">Home</a></li>
+									<li><a href="#profile_two" data-toggle="tab">Profile</a></li>
+									<li><a href="#messages_two" data-toggle="tab">Messages</a></li>
+									<li><a href="#settings_two" data-toggle="tab">Settings</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="home_two">
+										<h4>Home tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="profile_two">
+										<h4>Profile tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="messages_two">
+										<h4>Messages tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+									<div class="tab-pane fade" id="settings_two">
+										<h4>Settings tab</h4>
+										<p>
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+											Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="well">
+							<h4>Normal Well</h4>
+							<p>lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well well-lg">
+							<h4>Large Well</h4>
+							<p>lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well well-sm">
+							<h4>Small Well</h4>
+							<p>lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="jumbotron nav">
+							<h1>Jumbotron</h1>
+							<p>
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+							</p>
+							<button type="button" class="btn btn-primary btn-lg" name="learn_button" id="learn_button">Learn more</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">Basic Form Elements</div>
+							<div class="row">
+								<div class="panel-body">
+									<div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="input_text">Text Input</label>
+												<input type="text" name="input_text" id="input_text" class="form-control" />
+												<div class="help-block">Example block-level help text here.</div>
+											</div>
+											<div class="form-group">
+												<label for="place_text">Text Input with Placeholder</label>
+												<input type="text" name="place_text" id="place_text" class="form-control" />
+											</div>
+											<div class="form-group">
+												<label>Static control</label>
+												<p class="form-control-static">email@example.com</p>
+											</div>
+											<div class="form-group">
+												<label for="inp_file">File input</label>
+												<input type="file" name="inp_file" id="inp_file"/>
+											</div>
+											<div class="form-group">
+												<label for="inp_textarea">Text area</label>
+												<textarea class="form-control" name="inp_textarea" id="inp_textarea" rows="3" cols="10"></textarea>
+											</div>
+											<div class="form-group">
+												<label>Checkboxes</label>
+												<div class="checkbox">
+													<label for="one_checkbox">
+														<input type="checkbox" name="one_checkbox" id="one_checkbox" value="one_check"/>Checkbox 1
+													</label>
+												</div>
+												<div class="checkbox">
+													<label for="two_checkbox">
+														<input type="checkbox" name="two_checkbox" id="two_checkbox" value="two_check">Checkbox 2
+													</label>
+												</div>
+												<div class="checkbox">
+													<label for="three_checkbox">
+														<input type="checkbox" name="three_checkbox" id="three_checkbox" value="three_check">Checkbox 3
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<label>Inline Checkboxes</label>
+												<label for="check_one_checkbox" class="checkbox-inline">
+													<input type="checkbox" name="check_one_checkbox" id="check_one_checkbox" value="check_one">1
+												</label>
+												<label for="check_two_checkbox" class="checkbox-inline">
+													<input type="checkbox" name="check_two_checkbox" id="check_two_checkbox" value="check_two">2
+												</label>
+												<label for="check_three_checkbox" class="checkbox-inline">
+													<input type="checkbox" name="check_three_checkbox" id="check_three_checkbox" value="check_three	">3
+												</label>
+											</div>
+											<div class="form-group">
+												<label>Radio Buttons</label>
+												<div class="radio">
+													<label for="one_radio">
+														<input type="radio" name="btn_radio" id="one_radio" value="radio_one">Radio 1
+													</label>
+												</div>
+												<div class="radio">
+													<label for="two_radio">
+														<input type="radio" name="btn_radio" id="two_radio" value="radio_two">Radio 2
+													</label>
+												</div>
+												<div class="radio">
+													<label for="three_radio">
+														<input type="radio" name="btn_radio" id="three_radio" value="radio_three">Radio 3
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<label>Inline Radio Buttons</label>
+												<label class="radio-inline" for="inline_one_radio">
+													<input type="radio" name="inline_radio" id="inline_one_radio" value="inline_one" />1
+												</label>
+												<label class="radio-inline" for="inline_two_radio">
+													<input type="radio" name="inline_radio" id="inline_two_radio" value="inline_two" />2
+												</label>
+												<label class="radio-inline" for="inline_three_radio">
+													<input type="radio" name="inline_radio" id="inline_three_radio" value="inline_three" />3
+												</label>
+											</div>
+											<div class="form-group">
+												<label for="single_select">Selects</label>
+												<select name="single_select" id="single_select" class="form-control">
+													<option value="single_option">1</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="multiple_select">Multiple Selects</label>
+												<select name="multiple_select" id="multiple_select" class="form-control" size="4" multiple="multiple">
+													<option value="one_option">1</option>
+													<option value="two_option">2</option>
+													<option value="three_option">3</option>
+													<option value="four_option">4</option>
+													<option value="five_option">5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default" name="btn_submit" id="btn_submit">Submit Button</button> 
+												<button type="reset" class="btn btn-default"  name="btn_reset" id="btn_reset">Reset Button</button> 
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<h1>Disabled Form States</h1>
+											<div class="form-group">
+												<label>Disabled Input</label>
+												<input type="text" class="form-control" name="disabled_text" id="disabled_text" disabled="disabled" />
+											</div>
+											<div class="form-group">
+												<label for="disabled_select"></label>
+												<select class="form-control" name="disabled_select" id="disabled_select" disabled="disabled">
+													<option value="disabled_option">Disabled select menu</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<div class="checkbox">
+													<label for="disabled_checkbox">
+														<input type="checkbox" name="disabled_checkbox" id="disabled_checkbox" value="disabled_check">Disabled Checkbox
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<button type="button" name="disabled_button" id="disabled_button" class="btn btn-primary disabled">Disabled Button</button>
+											</div>
+											<h1>Form Validation States</h1>
+											<div class="form-group has-success">
+												<label class="control-label" for="success_text">Input with success</label>
+												<input type="text" class="form-control" name="success_text" id="success_text" />
+											</div>
+											<div class="form-group has-warning">
+												<label class="control-label" for="warning_text">Input with warning</label>
+												<input type="text" class="form-control" name="warning_text" id="warning_text" />
+											</div>
+											<div class="form-group has-error">
+												<label class="control-label" for="error_text">Input with warning</label>
+												<input type="text" class="form-control" name="error_text" id="error_text" />
+											</div>
+											<h1>Input Groups</h1>
+											<div class="input-group form-group">
+												<span class="input-group-addon">@</span>
+												<input type="text" name="user_text" id="user_text" class="form-control" placeholder="Username" />
+											</div>
+											<div class="input-group form-group">
+												<input type="text" name="currency_text" id="currency_text" class="form-control" />
+												<span class="input-group-addon">.00</span>
+											</div>
+											<div class="input-group form-group">
+												<span class="input-group-addon"><i class="fa fa-eur"></i></span>
+												<input type="text" name="euro_text" id="euro_text" class="form-control" placeholder="Font Awesome Icon"/>
+												<span class="input-group-addon">.00</span>
+											</div>									
+											<div class="input-group form-group">
+												<span class="input-group-addon">$</span>
+												<input type="text" name="dollar_text" id="dollar_text" class="form-control" />
+												<span class="input-group-addon">.00</span>
+											</div>
+											<div class="input-group form-group">
+												<input type="text" class="form-control" id="search_text" name="search_text" />
+												<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Alert Styles</div>
+							<div class="panel-body">
+								<div class="alert alert-success">
+									Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <strong>Alert Link.</strong>
+								</div>
+								<div class="alert alert-info">
+									Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <strong>Alert Link.</strong>
+								</div>
+								<div class="alert alert-warning">
+									Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <strong>Alert Link.</strong>
+								</div>
+								<div class="alert alert-danger">
+									Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <strong>Alert Link.</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Dismissable Alerts</div>
+							<div class="panel-body">
+								<div class="alert alert-success">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<p>Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. 
+										<span class="alert-link">Alert</span></p><span class="alert-link">Link.</span>
+									</p>
+								</div>
+								<div class="alert alert-info">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<p>Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit.
+									<span class="alert-link">Alert</span></p><span class="alert-link">Link.</span>
+								</div>
+								<div class="alert alert-warning">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<p>Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <span class="alert-link">Alert</span></p><span class="alert-link">Link.</span>
+								</div>
+								<div class="alert alert-danger">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<p>Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum sit dolor sit. <span class="alert-link">Alert</span></p><span class="alert-link">Link.</span>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Modals</div>
+							<div class="panel-body">
+								<button type="button" class="btn btn-primary btn-lg" name="modal_button" id="modal_button" data-toggle="modal" data-target="#myModal">Launch Demo Modal</button>
+								<div id="myModal" class="modal fade in">
+									<div class="modal-dialog">	
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" data-dissmiss="modal" name="dismiss_button" id="dismiss_button" class="close">&times;</button>
+												<h4 class="modal-title">Page Title</h4>
+											</div>
+											<div class="modal-body">Body of Modal</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" name="close_button" id="close_button" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Tooltip and Popovers</div>
+							<div class="panel-body">
+								<h3>Tooltip Demo</h3>
+								<button type="button" name="tooltip_left_button" id="tooltip_left_button" class="btn btn-default" data-toggle="tooltip" title="Tooltip on Left" data-placement="left">Tooltip on left</button>
+								<button type="button" name="tooltip_top_button" id="tooltip_top_button" class="btn btn-default" data-toggle="tooltip" title="Tooltip on top" data-placement="top">Tooltip on top</button>
+								<button type="button" name="tooltip_bottom_button" id="tooltip_bottom_button" class="btn btn-default" data-toggle="tooltip" title="Tooltip on bottom" data-placement="bottom">Tooltip on bottom</button>
+								<button type="button" name="tooltip_right_button" id="tooltip_right_button" class="btn btn-default" data-toggle="tooltip" title="Tooltip on right" data-placement="right">Tooltip on right</button>
+							</div>
+							<div class="panel-body">
+								<h3>Clickable Popover Demo</h3>
+								<button type="button" name="popover_left_button" id="popover_left_button" class="btn btn-default" data-toggle="popover" data-content="Click anywhere in the document to dismiss the popover" data-trigger="focus" title="Popover on left" data-placement="left">Popover on left</button>
+								<button type="button" name="popover_top_button" id="popover_top_button" class="btn btn-default" data-toggle="popover" data-content="Click anywhere in the document to dismiss the popover" data-trigger="focus" title="Popover on top" data-placement="top">Popover on top</button>
+								<button type="button" name="popover_bottom_button" id="popover_bottom_button" class="btn btn-default" data-toggle="popover" data-content="Click anywhere in the document to dismiss the popover" data-trigger="focus" title="Popover on bottom" data-placement="bottom">Popover on bottom</button>
+								<button type="button" name="popover_right_button" id="popover_right_button" class="btn btn-default" data-toggle="popover" data-content="Click anywhere in the document to dismiss the popover" data-trigger="focus" title="Popover on right" data-placement="right">Popover on right</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumb">
+							<li>Home</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Home</a></li>
+								<li>Library</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Library</a></li>
+							<li	>Data</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>	

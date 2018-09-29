@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Table Style</title>
+	</head>
+	<body>
+		<form name="new_table_form" id="new_table_form">
+			<div>
+				<label for="name_text"><u>N</u>ame:</label>					
+				<input type="text" name="name_text" id="name_text" value="Table Style 1" accesskey="n" />					
+			</div>
+			<fieldset>
+				<legend>
+					<label for="table_element_select"><u>T</u>able Element:</label>
+				</legend>
+				<div>
+					<select name="table_element_select" id="table_element_select" size=9 accesskey="t">
+						<option value="1" selected="selected">Whole Table</option>
+						<option value="2">First Column Stripe</option>
+						<option value="3">Second Column Stripe</option>
+						<option value="4">First Row Stripe</option>
+						<option value="5">Second Row Stripe</option>
+						<option value="6">Last Column</option>
+						<option value="7">First Column</option>
+						<option value="8">Header Row</option>
+						<option value="9">Total Row</option>
+					</select>
+				</div>
+				<div>
+					<span>
+						<button type="button" name="format_button" id="format_button" accesskey="f"><u>F</u>ormat</button>
+					</span>
+					<span>
+						<button type="button" name="clear_button" id="clear_button" accesskey="c" disabled="disabled"><u>C</u>lear</button>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Preview</legend>
+				<div>
+					<center>
+						<img src="image/screen12_preview.png" alt="screen12_preview.png" />
+					</center>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Element Formatting:</legend>
+			</fieldset>
+			<div>
+				<input type="checkbox" name="set_default_checkbox" id="set_default_checkbox" value="set_default" accesskey="s" />
+				<label for="set_default_checkbox"><u>S</u>et as default table style for this document</label>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

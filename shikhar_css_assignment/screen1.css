@@ -1,0 +1,194 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.main,.sub_main
+{
+	height: 585px;
+}
+.main
+{
+	margin: 20px;
+	width: 700px;
+	background: url("image/screen1.png");
+}
+.sub_main
+{
+	background-color: rgba(0,0,0,0.82);
+	-webkit-box-shadow: 0 1px 0 0 #896828, 0 2px 0 0 #F4D394, 0 -1px 0 0 #886728, 0 -2px 0 0 #F4D393;
+	-moz-box-shadow: 0 1px 0 0 #896828, 0 2px 0 0 #F4D394, 0 -1px 0 0 #886728, 0 -2px 0 0 #F4D393;
+	box-shadow: 0 1px 0 0 #896828, 0 2px 0 0 #F4D394, 0 -1px 0 0 #886728, 0 -2px 0 0 #F4D393;
+}
+.title_head
+{		
+	height: 27px;
+	width: 690px;
+	padding-top: 13px;
+}
+.nav_top a
+{
+	font-size: 13px;
+}
+.size,.title_txt,.nav_top a,.text_head
+{
+	font-family: arial;
+	font-weight: bold;
+}
+.title_txt
+{
+	margin-top: 10px;
+	color: #ffffff;
+	margin-left: 10px;
+}
+.fnt,.right_div
+{
+	font-size: 14px;
+}
+.nav_top
+{
+	margin-right: 3px;	
+}
+.sub_container
+{	
+	width: 800px;
+	height: 550px;
+}
+.text_head,.then
+{
+	font-family: arial narrow;
+}
+.text_head
+{		
+	font-size: 15px;
+	height: 32px;
+	float: right;
+	padding-top: 10px;
+	text-align: center;
+}
+.text_head_form
+{
+	width: 140px;
+	padding-bottom: 2px;
+}
+.text_head_para
+{
+	width: 158px;
+}
+.text_head_actions
+{
+	width: 517px;
+	padding-bottom: 3px;
+}
+.text_head_nav
+{
+	width: 499px;
+	padding: 19px 0 3px 0;
+}
+.color_b:link
+{
+	color: #356FD3;
+}
+hr.lines
+{	
+	border: 0;
+	border-top: 1px solid #A8A8A8;
+	width: 680px;
+	margin-left: 9px;
+}
+.color_y
+{
+	color: #E0E025;
+}
+.color_w
+{
+	color: #F4F4F4;
+}
+.text_format,.actions
+{
+	padding-top: 20px;
+	width: 255px;
+}
+.text_format
+{
+	height: 188px;
+	margin-top: 3px
+}
+.actions
+{
+	height: 234px;
+	width: 441px;
+}
+.navigation
+{
+	width: 519px;
+}
+.fll,.left_div,.right_div
+{
+	float: left;
+}
+.para_format
+{
+	width: 265px;
+	margin-top: 15px;
+}
+.then
+{
+	font-size: 11px;
+	letter-spacing: -0.5px;
+	color: #F3F3F3;
+}
+.left_div,.right_div
+{	
+	line-height: 20px;
+}
+.left_div
+{	
+	font-size: 12px;
+}
+.left_div_form
+{
+	width: 134px;
+}
+.left_div_para
+{
+	width: 130px;
+}
+.left_div_actions
+{
+	width: 155px;	
+}
+.left_div_nav
+{
+	width: 233px;
+}
+.right_div
+{	
+	margin-left: 5px;
+	font-family: Arial Narrow;
+	font-weight: normal;
+	color: #F0F0C5;	
+}
+.right_div_form
+{
+	width: 120px;
+}
+.actions,.navigation,.nav_top
+{
+	float: right;	
+}
+.txt_rt
+{
+	text-align: right;
+}
+.txt_lt
+{	
+	text-align: left;
+}
+@media only screen and (min-width: 1500px) and (max-width: 1550px) 
+{
+	.right_div
+	{
+		line-height: 22px;
+	}
+}

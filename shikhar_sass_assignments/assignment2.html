@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="newstyle.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="clearfix list-border">
+                <div class="inner-container">
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <i class="tab-icon glyphicon glyphicon-picture"></i>
+                                <span class="tab-text">Inbox</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <i class="tab-icon glyphicon glyphicon-star"></i>
+                                <span class="tab-text">Starred</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <i class="tab-icon glyphicon glyphicon-send sent-icon"></i>
+                                <span class="tab-text">Sent Mail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <i class="tab-icon fa fa-envelope-open"></i>
+                                <span class="tab-text">Drafts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <i class="tab-icon glyphicon glyphicon-picture"></i>
+                                <span class="tab-text">Inbox</span>
+                            </div>
+                        </div>
+                    </div>                            
+                </div>
+                <hr class="divider"/>
+                <div class="inner-container">
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <span class="info-text">All mail</span>
+                                <i class="info-icon fa fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>                                    
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <span class="info-text">Trash</span>
+                                <i class="info-icon fa fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>                                        
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <span class="info-text">Spam</span>
+                                <i class="info-icon fa fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div>
+                        <div class="outer-tab">
+                            <div class="list-box">
+                                <span class="info-text">Follow up</span>
+                                <i class="info-icon fa fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>                                
+            </div>
+            <img src="bottom-tear.svg" class="ruler" />                        
+        </div>
+        <pre>
+            @font-face {
+              font-family: roboto-bold;
+              src: url("Roboto-Bold.ttf");
+            }
+
+            @font-face {
+              font-family: roboto-regular;
+              src: url("Roboto-Regular.ttf");
+            }
+
+            @mixin set-font-family($font-name) {
+              font-family: $font-name;
+            }
+
+            @mixin set-spacing($margin, $padding) {
+              margin: $margin;
+              padding: $padding;
+            }
+
+            @mixin set-dimension($width, $height) {
+              height: $height;
+              width: $width;
+            }
+
+            @mixin transform($trans) {
+              transform: $trans;
+            }
+
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            @mixin set-back($back) {
+              background-color: $back;
+            }
+
+            @mixin float($float) {
+              float: $float;
+            }
+
+            @mixin pos($position, $top: "", $right: "", $bottom: "", $left: "") {
+              position: $position;
+              top: #{ $top };
+              right: #{ $right };
+              bottom: #{ $bottom };
+              left: #{ $left };
+            }
+
+            .list-border {
+              @include set-dimension(100%, 513px);
+              @include set-spacing(20px, 0);
+              max-width:360px;
+              border: 1px solid #D9D9D9;
+              border-bottom: none;
+            }
+
+            .inner-container {
+              padding: 8px 0;
+              .outer-tab {
+                @include set-font-family("roboto-regular");
+                @include set-spacing(0, 0);
+                color: rgba(0, 0, 0, 0.87);
+              }
+              .list-box {
+                padding: 12px 16px 12px 20px;
+                @include pos(relative);
+                overflow: hidden;
+                &:hover {
+                  @include set-back(rgba(0, 0, 0, 0.1)); 
+                }
+                .tab-icon {
+                  font-size: 20px;
+                  color: rgb(117, 117, 117);
+                }
+                .tab-text {
+                  font-size: 18px;
+                  margin-left: 20px;
+                  padding-left: 11px;  
+                }
+              }
+            }
+
+            .sent-icon {
+              @include transform(rotate(68deg));
+            }
+
+            .divider {
+              @include set-back(rgba(224, 224, 224, 1));
+              @include set-spacing(0, 0);
+              height: 1px;
+              border: none;
+            }
+
+            .info-icon {
+              @include float(right);
+              font-size: 22px;
+              color: rgb(117, 117, 117);
+            }
+              
+            .info-text {
+              font-size: 18px;
+            }
+
+            .ruler {
+              @include pos(relative, "", "", 30px, 20px);
+              max-width: 360px;
+            }
+
+            .ripple {
+              border-radius: 50%;
+              @include set-back(rgba(211, 211, 211, 0.9));
+              @include transform(scale(1,0));
+              @include pos(absolute);
+            }
+
+            .rippleEffect {
+              animation: rippleDrop 0.5s linear;
+            }
+
+            @keyframes rippleDrop {
+              100% {
+                @include transform(scale(1.5,3));
+                opacity: 0;
+              }
+            }    
+        </pre>
+        <script src="script2.js"></script>
+    </body>
+</html>

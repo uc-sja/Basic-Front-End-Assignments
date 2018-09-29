@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Envelopes and Labels</title>
+	</head>
+	<body>
+		<form name="envelopes_and_labels_form" id="envelopes_and_labels_form">
+			<ul>
+				<li><u>E</u>nvelopes</li>
+				<li><u>L</u>abels</li>
+			</ul>
+			<div>
+				<span>
+					<label for="delivery_add_select"><u>D</u>elivery address:</label>
+				</span>
+				<span>
+					<img src="image/envelop.png" alt="envelop.png" />
+				</span>
+			</div>
+			<div>
+				<select name="delivery_add_select" id="delivery_add_select" size="6" accesskey="d"></select>
+			</div>
+			<div>
+				<input type="checkbox" name="add_electronic_checkbox" id="add_electronic_checkbox" value="add_electronic" accesskey="c" />
+				<label for="add_electronic_checkbox">Add ele<u>c</u>tronic postage</label>
+			</div>
+			<div>
+				<span>
+					<label for="return_add_select"><u>R</u>eturn address:</label>
+				</span>
+				<span>
+					<img src="image/envelop.png" alt="envelop.png" />
+				</span>
+				<span>
+					<input type="checkbox" name="omit_checkbox" id="omit_checkbox" value="omit" accesskey="m" />
+					<label for="omit_checkbox">O<u>m</u>it</label>
+				</span>
+			</div>
+			<div>
+				<select name="return_add_select" id="return_add_select" size="6" accesskey="r"></select>
+			</div>
+			<fieldset>
+				<legend>Preview</legend>
+				<center>	
+					<img src="image/preview.png" alt="preview.png" />
+				</center>
+			</fieldset>
+			<fieldset>	
+				<legend>Feed</legend>
+				<center>
+					<img src="image/feed.png" alt="feed.png" />
+				</center>
+			</fieldset>
+			<p>When prompted by the printer, insert an envelope in your printer's manual feeder.</p>
+			<div>
+				<span>
+					<button type="button" name="print_button" id="print_button" accesskey="p"><u>P</u>rint</button>
+				</span>
+				<span>
+					<button type="button" name="add_doc_button" id="add_doc_button" accesskey="a"><u>A</u>dd to Document</button>
+				</span>
+				<span>
+					<button type="button" name="option_button" id="option_button" accesskey="o"><u>O</u>ptions...</button>
+				</span>
+				<span>
+					<button type="button" name="epost_button" id="epost_button" accesskey="t">E-pos<u>t</u>age Properties...</button>
+				</span>
+			</div>
+			<div>
+				<button type="button" name="cancel_button" id="cancel_button">Cancel</button>		
+			</div>
+		</form>
+	</body>
+</html>

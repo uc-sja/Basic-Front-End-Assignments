@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQ Module</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="jq_style.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+        <script src="jq_module.js"></script>
+    </head>
+    <body>
+        <div id="container" class="contain">
+            <div class="top left draggable first" id="drag_top_left">
+                <div class="hand">Handle</div>
+                <div class="div_content">This is a draggable div</div>
+            </div>
+            <div class="top right draggable" id="drag_top_right">
+                <div class="hand">Handle</div>
+                <div class="div_content">This is a draggable div</div>
+            </div>
+            <div class="div_content mid droppable">Drop Here</div>
+            <div class="bottom left draggable" id="drag_bottom_left">
+                <div class="hand">Handle</div>
+                <div class="div_content">This is a draggable div</div>
+            </div>
+            <div class="bottom right draggable" id="drag_bottom_right">
+                <div class="hand">Handle</div>
+                <div class="div_content">This is a draggable div</div>
+            </div>
+        </div>
+        <div id="dialog_box" title="Module" class="dialog_box">THIS IS A DIALOG BOX</div>
+    </body>
+</html>

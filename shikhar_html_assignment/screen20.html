@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Symbol</title>
+	</head>
+	<body>
+		<form name="symbol_form" id="symbol_form">
+			<ul>
+				<li><u>S</u>ymbols</li>
+				<li>S<u>p</u>ecial Characters</li>
+			</ul>
+			<div>
+				<span>
+					<label for="font_select"><u>F</u>ont:</label>
+					<select name="font_select" id="font_select" accesskey="f">
+						<option value="1">(normal text)</option>
+					</select>
+				</span>
+				<span>
+					<label for="subset_select">S<u>u</u>bset:</label>
+					<select name="subset_select" id="subset_select" accesskey="u">
+						<option value="1">Currency Symbols</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<img src="image/symbols.png" alt="symbols.png" />
+			</div>
+			<p>
+				<u>R</u>ecently used symbols:
+			</p>
+			<div>
+				<img src="image/symbols_recent.png" alt="recent_symbols.png" />
+			</div>
+			<p>Unicode name:</p>
+			<p>Euro Sign</p>
+			<div>
+				<span>
+					<label for="char_code_text"><u>C</u>haracter code:</label>
+					<input type="text" name="char_code_text" id="char_code_text" value="20AC" accesskey="c" />
+				</span>
+				<span>
+					<label for="from_select">fro<u>m</u>:</label>
+					<select name="from_select" id="from_select" accesskey="m">
+						<option value="1">Unicode (hex)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="auto_correct_button" id="auto_correct_button" accesskey="a"><u>A</u>utoCorrect...</button>
+				</span>
+				<span>
+					<button type="button" name="shortcut_button" id="shortcut_button" accesskey="k">Shortcut <u>K</u>ey...</button>
+				</span>
+				<span>Shortcut key: Alt+Ctrl+E</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="insert_button" id="insert_button" autofocus="autofocus" accesskey="i"><u>I</u>nsert</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

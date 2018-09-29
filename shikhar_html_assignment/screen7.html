@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Record Macro</title>
+	</head>
+	<body>
+		<form name="record_macro_form" id="record_macro_form">
+			<div>
+				<label for="macro_name_text"><u>M</u>acro name:</label>
+				<input type="text" name="macro_name_text" id="macro_name_text" value="Macro1" accesskey="m" />
+			</div>
+			<p>Assign macro to</p>
+			<hr />
+			<div>
+				<span>
+					<img src="image/button.png" alt="button.png" />
+				</span>
+				<span><u>B</u>utton</span>
+				<span>
+					<img src="image/keyboard.png" alt="keyboard.png" />
+				</span>
+				<span><u>K</u>eyboard</span>
+			</div>
+			<div>
+				<span>
+					<label for="store_macro_select"><u>S</u>tore macro in:</label>
+				</span>
+				<span>
+					<select name="store_macro_select" id="store_macro_select" accesskey="s">
+						<option value="1">All Documents (Normal.dotm)</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<label for="desc_textarea"><u>D</u>escription:</label>
+			</div>
+			<textarea name="desc_textarea" id="desc_textarea" rows="4" cols="70" accesskey="d"></textarea>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

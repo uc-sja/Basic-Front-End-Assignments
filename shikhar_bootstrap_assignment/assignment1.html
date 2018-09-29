@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment1</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="pop-over"]').popover();
+			});	
+		</script>
+	</head>
+	<body>
+		<form name="boot_form" id="boot_form">
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" name="navbar_head_button" id="navbar_head_button" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="pull-left"><img src="image/bslogo.png" alt="bslogo.png"></a>
+						<a class="navbar-brand">Boostswatch</a>
+					</div>
+					<div class="navbar-collapse collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle">Themes<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Menu1</a></li>
+									<li><a href="#">Menu2</a></li>
+									<li><a href="#">Menu3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+						<ul class="nav navbar-right navbar-nav">
+							<li><a href="#">Built with Bootstrap</a></li>
+							<li><a href="#">Wrap Bootstrap</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="page-header">
+					<h1>Tables</h1>
+				</div>
+				<div>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Column heading</th>
+								<th>Column heading</th>
+								<th>Column heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td>1</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>2</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="info">
+								<td>3</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="success">
+								<td>4</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="danger">
+								<td>5</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="warning">
+								<td>6</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="active">
+								<td>7</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+								<td>Column Content</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page-header">
+					<h1>Navbar</h1>
+				</div>
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" name="navbar_one_button" id="navbar_one_button" data-target="#demo1">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">Brand</a>
+					</div>
+					<div class="navbar-collapse collapse" id="demo1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Sub-Menu1</a></li>
+									<li><a href="#">Sub-Menu2</a></li>
+									<li><a href="#">Sub-Menu3</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="search" class="form-control" placeholder="Search" name="brand_search" id="brand_search" />
+							</div>
+							<button type="submit" class="btn btn-primary navbar-inverse" name="brand_submit" id="brand_submit">Submit</button>
+						</div>
+						<div class="navbar-right">
+							<p class="navbar-text">Link</p>
+						</div>
+					</div>
+				</nav>					
+				<nav class="navbar bg-primary">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle navbar-default" name="navbar_two_button" id="navbar_two_button" data-target="#demo2" data-toggle="collapse">
+							<span class="icon-bar navbar-inverse"></span>
+							<span class="icon-bar navbar-inverse"></span>
+							<span class="icon-bar navbar-inverse"></span>
+						</button>
+						<a href="#" class="btn-primary navbar-brand">Brand</a>
+					</div>
+					<div class="navbar-collapse collapse" id="demo2">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#" class="btn-primary active">Link</a>
+							</li>
+							<li>
+								<a href="#" class="btn-primary">Link</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle btn-primary">Dropdown<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Sub-Menu1</a></li>
+									<li><a href="#">Sub-Menu2</a></li>
+									<li><a href="#">Sub-Menu3</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="search" class="form-control" placeholder="Search" name="brand_search_two" id="brand_search_two" />
+							</div>
+							<button type="submit" class="btn  btn-primary navbar-inverse" name="brand_two_submit" id="brand_two_submit">Submit</button>
+						</div>
+						<div class="navbar-right"> 
+							<p class="navbar-text btn-primary">Link</p>
+						</div>
+					</div>	
+				</nav>
+				<div class="page-header">
+					<h1>Buttons</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">			 
+						<div>
+							<button type="button" name="default_one_button" id="default_one_button" class="btn btn-default">Default</button>
+							<button type="button" name="primary_one_button" id="primary_one_button" class="btn btn-primary">Primary</button>
+							<button type="button" name="success_one_button" id="success_one_button" class="btn btn-success">Success</button>
+							<button type="button" name="info_one_button" id="info_one_button" class="btn btn-info">Info</button>
+							<button type="button" name="warning_one_button" id="warning_one_button" class="btn btn-warning">Warning</button>
+							<button type="button" name="danger_one_button" id="danger_one_button" class="btn btn-danger">Danger</button>
+						</div>
+						<div>
+							<button type="button" name="link_one_button" id="link_one_button" class="btn btn-link">Link</button>  
+						</div>
+						<div>
+							<button type="button" name="default_two_button" id="default_two_button" class="btn btn-default disabled">Default</button>
+							<button type="button" name="primary_two_button" id="primary_two_button" class="btn btn-primary disabled">Primary</button>
+							<button type="button" name="success_two_button" id="success_two_button" class="btn btn-success disabled">Success</button>
+							<button type="button" name="info_two_button" id="info_two_button" class="btn btn-info disabled">Info</button>
+							<button type="button" name="warning_two_button" id="warning_two_button" class="btn btn-warning disabled">Warning</button>
+							<button type="button" name="danger_two_button" id="danger_two_button" class="btn btn-danger disabled">Danger</button>
+						</div>
+						<div>
+							<button type="button" name="link_two_button" id="link_two_button" class="btn btn-link">Link</button>
+						</div>
+						<div>
+							<div class="btn-group">
+								<button type="button" name="default_three_button" id="default_three_button"  class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default
+									<span class="caret"></span>
+								</button>	
+								<ul class="dropdown-menu">
+									<li><a href="#">Default1</a></li>
+									<li><a href="#">Default2</a></li>
+									<li><a href="#">Default3</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button type="button" name="primary_three_button" id="primary_three_button"  class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary
+									<span class="caret"></span>
+								</button>	
+								<ul class="dropdown-menu">
+									<li><a href="#">Primary1</a></li>
+									<li><a href="#">Primary2</a></li>
+									<li><a href="#">Primary3</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button type="button" name="success_three_button" id="success_three_button_button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success
+									<span class="caret"></span>
+								</button>	
+								<ul class="dropdown-menu">
+									<li><a href="#">Success1</a></li>
+									<li><a href="#">Success2</a></li>
+									<li><a href="#">Success3</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button type="button" name="info_three_button" id="info_three_button" class="btn btn-info" data-toggle="dropdown">Info
+									<span class="caret"></span>
+								</button>	
+								<ul class="dropdown-menu">
+									<li><a href="#">Info1</a></li>
+									<li><a href="#">Info2</a></li>
+									<li><a href="#">Info3</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="btn-group">
+								<button type="button" name="warning_three_button" id="warning_three_button"  class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning
+									<span class="caret"></span>
+								</button>	
+								<ul class="dropdown-menu">
+									<li><a href="#">Warning1</a></li>
+									<li><a href="#">Warning2</a></li>
+									<li><a href="#">Warning3</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-group">
+							<button type="button" name="large_button" id="large_button" class="btn btn-primary btn-lg">Large button</button>
+							<button type="button" name="default_button" id="default_button" class="btn btn-primary btn-md">Default button</button>
+							<button type="button" name="small_button" id="small_button" class="btn btn-primary btn-sm">Small button</button>
+							<button type="button" name="mini_button" id="mini_button" class="btn btn-primary btn-sm">Mini button</button>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<button type="button" name="block_button" id="block_button" class="btn btn-block btn-primary btn-lg navbar-inverse">Block level button</button>
+						</div>
+						<div class="form-group btn-group btn-block navbar-static-top">
+							<button type="button" name="left_button" id="left_button" class="btn btn-primary navbar-inverse col-sm-4">Left</button>
+							<button type="button" name="middle_button" id="middle_button" class="btn btn-primary navbar-inverse col-sm-4">Middle</button>
+							<button type="button" name="right_button" id="right_button" class="btn btn-primary navbar-inverse col-sm-4">Right</button>
+						</div>
+						<div class="form-group">
+							<div class="btn-group">
+								<button type="button" name="one_button" id="one_button" class="btn btn-primary navbar-inverse">1</button>
+								<button type="button" name="two_button" id="two_button" class="btn btn-primary navbar-inverse">2</button>
+								<button type="button" name="three_button" id="three_button" class="btn btn-primary navbar-inverse">3</button>
+								<button type="button" name="four_button" id="four_button" class="btn btn-primary navbar-inverse">4</button>
+							</div>
+							<div class="btn-group">
+								<button type="button" name="five_button" id="five_button" class="btn btn-primary navbar-inverse">5</button>
+								<button type="button" name="six_button" id="six_button" class="btn btn-primary navbar-inverse">6</button>
+								<button type="button" name="seven_button" id="seven_button" class="btn btn-primary navbar-inverse">7</button>					
+							</div>
+							<div class="btn-group">
+								<button type="button" name="eight_button" id="eight_button" class="btn btn-primary navbar-inverse">8</button>
+								<div class="btn-group">
+									<button type="button" name="dropdown_button" id="dropdown_button" class="btn btn-primary navbar-inverse dropdown-toggle" data-toggle="dropdown" >Dropdown
+										<span class="caret"></span>
+									</button>	
+									<ul class="dropdown-menu">
+										<li><a href="#">Button1</a></li>
+										<li><a href="#">Button2</a></li>
+										<li><a href="#">Button3</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-group btn-group-vertical">
+							<button type="button" name="vertical_one_button" id="vertical_one_button" class="btn btn-primary navbar-inverse">Button</button>
+							<button type="button" name="vertical_two_button" id="vertical_two_button" class="btn btn-primary navbar-inverse">Button</button>
+							<button type="button" name="vertical_three_button" id="vertical_three_button" class="btn btn-primary navbar-inverse">Button</button>
+							<button type="button" name="vertical_four_button" id="vertical_four_button" class="btn btn-primary navbar-inverse">Button</button>
+						</div>
+					</div>
+				</div>			
+				<div class="jumbotron">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<a data-toggle="pop-over" title="Graphics design" data-content="Corel Draw" data-placement="bottom">
+									<img src="image/pop1.png" alt="pop1.png" />								
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<a data-toggle="pop-over" title="Psd Design" data-content="Photoshop" data-placement="bottom">
+									<img src="image/pop2.png" alt="pop2.png" />								
+								</a>							
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<a data-toggle="pop-over" title="Logo Design" data-content="Illustrate" data-placement="bottom">
+									<img src="image/pop3.png"  alt="logo3.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="col-sm-12">
+								<div class="page-header checkbox">
+									<h4>ABOUT THE COMPANY</h4>
+								</div>
+								<small class="text-muted">
+									Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit
+									ametipsum dolor sit ametipsum dolor sit ametipsum dolorsit 
+									ametipsum dolor sit ametipsum dolor sit ametipsum dolor sito rem 
+									ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit ametipsum
+									dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit
+									ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet.
+								</small>
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<div>
+								<div>
+									<div class="col-xs-6">Web Design</div>
+									<div class="col-xs-6 text-right">88%</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%"></div>
+									</div>
+								</div>
+								<div>
+									<div class="col-xs-6">Web Design</div>
+									<div class="col-xs-6 text-right">88%</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+									</div>
+								</div>
+								<div>
+									<div class="col-xs-6">Marketing</div>
+									<div class="col-xs-6 text-right">70%</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:82%"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+					<div class="lead"></div>
+					<div>
+						<div class="col-sm-7">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="thumbnail">
+										<a href="#">
+											<img src="image/bssports.png" alt="bssports.png" />
+											<div class="caption">
+												<small class="text-muted">Sports</small>
+												<h4>Lorem ipsum dollor	Sit amet</h4>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="thumbnail">
+										<a href="#">
+											<img src="image/bssports2.png" alt="bssports2.png" />
+											<div class="caption">
+												<small class="text-muted">Sports</small>
+												<h4>Lorem ipsum dollor	Sit amet</h4>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="panel-group" id="accord">
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accord" href="#collapse_one">
+												<i class="fa fa-desktop list-inline text-primary" aria-hidden="true"></i><span class="radio-inline"><strong>100% Responsive design</strong></span>
+											</a>
+										</h4>
+									</div>
+									<div class="panel panel-collapse in" id="collapse_one">
+										<div class="panel-footer">
+											Amin pariatur cliche amin pariatur cliche amin pariatur cliche 
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<h4 class="panel-title">
+											<a href="#collapse_two" data-toggle="collapse" data-parent="#accord">
+												<i class="fa fa-crop text-primary" aria-hidden="true"></i><span class="radio-inline"><strong>Pixel Perfect design</strong></span>									
+											</a>
+										</h4>
+									</div>
+									<div class="collapse panel-collapse" id="collapse_two">
+										<div class="panel-footer">
+											Amin pariatur cliche amin pariatur cliche amin pariatur cliche 
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche									
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<h4 class="panel-title">
+											<a href="#collapse_three" data-parent="#accord" data-toggle="collapse">
+												<i class="fa fa-cogs text-primary" aria-hidden="true"></i><span class="radio-inline"><strong>Full Support</strong></span>	
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" id="collapse_three">
+										<div class="panel-footer">
+											Amin pariatur cliche amin pariatur cliche amin pariatur cliche 
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche
+											amin pariatur cliche amin pariatur cliche amin pariatur cliche																	
+										</div>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>Typography</h3>
+									<h1>Heading 1</h1>
+									<h2>Heading 2</h2>
+									<h3>Heading 3</h3>
+									<h4>Heading 4</h4>
+									<h5>Heading 5</h5>
+									<h6>Heading 6</h6>
+								</div>	
+								<div class="col-sm-12">			
+									<h3 class="text-uppercase"><strong>heading bold uppercase</strong></h3>
+									<h4 class="text-lowercase">heading semi bold lowercase</h4>
+									<h3 class="text-capitalize text-muted">heading light capitalize</h3>
+									<h4 class="text-lowercase text-muted">heading extra light lowercase</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<h3>Alert</h3>
+							<div class="alert alert-success">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+							<div class="alert alert-info">
+								<strong>Heads Up!</strong> This alert needs your attention but it's not super important.
+							</div>
+							<div class="alert alert-warning">
+								<strong>Warning!</strong> Better check yourself, you are not looking too good.
+							</div>
+							<div class="alert alert-danger">
+								<strong>Oh Snap!</strong> Change a few things and try submitting again.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

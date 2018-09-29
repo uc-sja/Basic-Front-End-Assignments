@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zoom</title>
+	</head>
+	<body>
+		<form name="zoom_form" id="zoom_form">
+			<p>Zoom to</p>
+			<hr />
+			<div>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="two_radio" value="two_hundred_percent" accesskey="2" />
+					<label for="two_radio"><u>2</u>00%</label>
+				</span>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="one_radio" value="hundred_percent" checked="checked" accesskey="1" />
+					<label for="one_radio"><u>1</u>00%</label>
+				</span>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="seventy_five_radio" value="seventy_five_percent" accesskey="7" />					
+					<label for="seventy_five_radio"><u>7</u>5%</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="page_width_radio" value="page_width" accesskey="p" />
+					<label for="page_width_radio"><u>P</u>age width</label>
+				</span>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="text_width_radio" value="text_width" accesskey="t" />
+					<label for="text_width_radio"><u>T</u>ext width</label>
+				</span>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="whole_page_radio" value="whole_page" accesskey="w" />					
+					<label for="whole_page_radio"><u>W</u>hole page</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="radio" name="zoom_to_radio" id="many_pages_radio" value="many_pages" accesskey="m" />
+					<label for="many_pages_radio"><u>M</u>any pages:</label>
+				</span>
+			</div>				
+				<figure>
+					<img src="image/zoom_to.png" alt="zoom_to.png" />
+				</figure>
+			<div>
+				<span>
+					<label for="percent_number">P<u>e</u>rcent:</label>
+				</span>
+				<span>
+					<input type="number" name="percent_number" id="percent_number" value="100" min="1" max="500" accesskey="e" /> 
+				</span>
+			</div>
+			<p>Preview</p>
+			<hr />
+			<div>
+				<img src="image/screen11_preview.png" alt="preview_screen11.png" />
+			</div>
+			<fieldset>
+				<center>
+					<div>AaBbCcDcEcXxYyZz</div>
+					<div>AaBbCcDcEcXxYyZz</div>	
+					<div>AaBbCcDcEcXxYyZz</div>
+					<div>AaBbCcDcEcXxYyZz</div>
+				</center>
+			</fieldset>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

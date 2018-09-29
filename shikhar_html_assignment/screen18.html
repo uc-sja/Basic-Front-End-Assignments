@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Highlight Changes</title>
+	</head>
+	<body>
+		<form name="highlight_changes_form" id="highlight_changes_form">
+			<div> 
+				<input type="checkbox" name="track_checkbox" id="track_checkbox" value="track" checked="checked" accesskey="t" />
+				<label for="track_checkbox"><u>T</u>rack changes while editing. This also shares your workbook.</label>
+			</div>
+			<p>Highlight which changes</p>
+			<hr />
+			<div>
+				<span>
+					<input type="checkbox" name="when_checkbox" id="when_checkbox" value="when" checked="checked" accesskey="n" />
+					<label for="when_checkbox">Whe<u>n</u>:</label>
+				</span>
+				<span>
+					<select name="when_select" id="when_select">
+						<option value="1">All</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="who_checkbox" id="who_checkbox" value="who" accesskey="o" />
+					<label for="who_checkbox">Wh<u>o</u>:</label>
+				</span>
+				<span>
+					<select name="who_select" id="who_select">
+						<option value="1">Everyone</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="where_checkbox" id="where_checkbox" value="where" accesskey="r" />
+					<label for="where_checkbox">Whe<u>r</u>e:</label>
+				</span>
+				<span>
+					<input type="text" name="where_text" id="where_text" />
+				</span>
+				<span>
+					<img src="image/screen18.png" alt="screen18.png" />
+				</span>
+			</div>		
+			<hr />
+			<div>
+				<input type="checkbox" name="screen_checkbox" id="screen_checkbox" value="screen" accesskey="s" checked="checked" />
+				<label for="screen_checkbox">Highlight changes on <u>s</u>creen</label>
+			</div>
+			<div>
+				<input type="checkbox" name="sheet_checkbox" id="sheet_checkbox" value="sheet" disabled="disabled" />
+				<label for="sheet_checkbox">List changes on a new sheet</label>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

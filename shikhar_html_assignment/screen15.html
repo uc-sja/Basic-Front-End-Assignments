@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert Function</title>
+	</head>
+	<body>
+		<form name="insert_fn_form" id="insert_fn_form">
+			<div>
+				<label for="search_textarea"><u>S</u>earch for a function:</label>
+			</div>
+			<div>
+				<span>
+					<textarea name="search_textarea" id="search_textarea" accesskey="s" rows="2" cols="60">Type a brief description of what you want to do and then click Go</textarea>
+				</span>
+				<span>
+					<button type="button" name="go_button" id="go_button" autofocus="autofocus" accesskey="g"><u>G</u>o</button>
+				</span>
+			</div>
+			<div>
+				<label for="category_select">Or select a <u>c</u>ategory:</label>
+				<select name="category_select" id="category_select" accesskey="c">
+					<option value="1">Most Recently Used</option>					
+				</select>
+			</div>
+			<div>
+				<label for="function_select">Select a functio<u>n</u>:</label>
+			</div>
+			<div>	
+				<select name="function_select" id="function_select" size=7 accesskey="n">
+					<option value="1" selected="selected">SUM</option>	
+					<option value="2">AVERAGE</option>
+					<option value="3">IF</option>
+					<option value="4">HYPERLINK</option>
+					<option value="5">COUNT</option>
+					<option value="6">MAX</option>
+					<option value="7">SIN</option>
+				</select>
+			</div>
+			<p>
+				<b>SUM(number1,number2,...)</b>
+			</p>
+			<p>Adds all the numbers in a range of cells.</p>
+			<hr />
+			<div>
+				<span>
+					<a href="http://www.google.com">Help on this function</a>
+				</span>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" >OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>	
+	</body>
+</html>

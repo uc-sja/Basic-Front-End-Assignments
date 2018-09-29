@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Action Settings</title>
+	</head>
+	<body>
+		<form name="action_settings_form" id="action_settings_form">
+			<ul>
+				<li>Mouse Click</li>
+				<li>Mouse Over</li>
+			</ul>
+			<fieldset>
+				<legend>Action on click</legend>
+				<div>
+					<span>
+						<input type="radio" name="action_on_click" id="none_radio" value="none" accesskey="n" />
+						<label for="none_radio"><u>N</u>one</label>
+					</span>
+				</div>		
+				<div>
+					<span>
+						<input type="radio" name="action_on_click" id="hyperlink_to_radio" value="hyperlink_to" accesskey="h" checked="checked" />
+						<label for="hyperlink_to_radio"><u>H</u>yperlink to:</label>
+					</span>
+					<span>
+						<select name="hyperlink_to_select" id="hyperlink_to_select">
+							<option value="1">Next Slide</option>
+						</select>
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="action_on_click" id="run_program_radio" value="run_program" accesskey="r" />
+						<label for="run_program_radio"><u>R</u>un program:</label>
+					</span>
+					<span>
+						<input type="text" name="run_program_text" id="run_program_text" disabled="disabled" />
+					</span>
+					<span>
+						<input type="file" name="run_program_file" id="run_program_file" accesskey="b" disabled="disabled" />
+					</span>
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="action_on_click" id="run_macro_radio" value="run_macro" accesskey="m" disabled="disabled" />
+						<label for="run_macro_radio">Run <u>m</u>acro:</label>
+					</span>
+					<span>
+						<select name="run_macro_select" id="run_macro_select" disabled="disabled"></select>
+					</span>						
+				</div>
+				<div>
+					<span>
+						<input type="radio" name="action_on_click" id="object_action_radio" value="object_action" accesskey="a" disabled="disabled" />
+						<label for="object_action_radio">Object <u>a</u>ction:</label>
+					</span>
+					<span>
+						<select name="object_action_select" id="object_action_select" disabled="disabled"></select>	
+					</span>						
+				</div>
+			</fieldset>
+			<div>
+				<span>
+					<input type="checkbox" name="play_sound_checkbox" id="play_sound_checkbox" value="play_sound" accesskey="p" checked="checked" />
+					<label for="play_sound_checkbox"><u>P</u>lay sound:</label>
+				</span>
+				<span>					
+					<select name="play_sound_select" id="play_sound_select">
+						<option value="1">[No Sound]</option>
+					</select>
+				</span>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="highlight_click_checkbox" id="highlight_click_checkbox" value="highlight_click" accesskey="c" disabled="disabled" />
+					<label for="highlight_click_checkbox">Highlight <u>c</u>lick</label>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

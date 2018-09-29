@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid and Guides</title>
+	</head>
+	<body>
+		<form name="grid_guide_form" id="grid_guide_form">
+			<p>Alignment Guides</p>
+			<hr />
+			<div>
+				<input type="checkbox" name="display_align_checkbox" id="display_align_checkbox" value="display_align" accesskey="d" checked="checked" />
+				<label for="display_align_checkbox"><u>D</u>isplay alignment guides</label>
+			</div>
+			<div>	
+				<input type="checkbox" name="page_guides_checkbox" id="page_guides_checkbox" value="page_guides" accesskey="p" checked="checked" />
+				<label for="page_guides_checkbox"><u>P</u>age guides</label>
+			</div>
+			<div>
+				<input type="checkbox" name="margin_guides_checkbox" id="margin_guides_checkbox" value="margin_guides" accesskey="a" checked="checked" />
+				<label for="margin_guides_checkbox">M<u>a</u>rgin guides</label>
+			</div>
+			<div>
+				<input type="checkbox" name="paragraph_guides_checkbox" id="paragraph_guides_checkbox" value="paragraph_guides" accesskey="g" checked="checked" />
+				<label for="paragraph_guides_checkbox">Para<u>g</u>raph guides</label>
+			</div>
+			<p>Object Snapping</p>
+			<hr />
+			<div>
+				<span>					
+					<input type="checkbox" name="snap_objects_checkbox" id="snap_objects_checkbox" value="snap_objects" accesskey="n" checked="checked" />
+					<label for="snap_objects_checkbox">S<u>n</u>ap objects to other objects</label>
+				</span>
+			</div>
+			<p>Grid settings</p>
+			<hr />
+			<div>
+				<span>
+					<label for="horizon_number">Hori<u>z</u>ontal spacing:</label>
+				</span>
+				<span>
+					<input type="number" name="horizon_number" id="horizon_number" value="0.13" min="0.00" max="5.00" step="0.01" accesskey="z" />
+				</span>
+			</div>
+			<div>
+				<span>
+					<label for="vertical_number"><u>V</u>ertical spacing:</label>
+				</span>
+				<span>
+					<input type="number" name="vertical_number" id="vertical_number" value="0.13" min="0.00" max="5.00" step="0.01" accesskey="v" />
+				</span>
+			</div>
+			<p>Grid origin</p>
+			<hr />
+			<div>
+				<input type="checkbox" name="use_margins_checkbox" id="use_margins_checkbox" value="use_margins" checked="checked" accesskey="m" />
+				<label for="use_margins_checkbox">Use <u>m</u>argins</label>
+			</div>
+			<div>
+				<span>Horizontal Origin:</span>
+				<span>
+					<input type="number" name="horizon_origin_number" id="horizon_origin_number" value="1" min="0" max="5" disabled="disabled" />
+				</span>
+			</div>
+			<div>
+				<span>Vertical Origin:</span>
+				<span>
+					<input type="number" name="vertical_origin_number" id="vertical_origin_number" value="1" min="0" max="5" disabled="disabled" />
+				</span>
+			</div>
+			<p>Show grid</p>
+			<hr />
+			<div>
+				<input type="checkbox" name="gridlines_checkbox" id="gridlines_checkbox" value="gridlines" accesskey="l" />
+				<label for="gridlines_checkbox">Disp<u>l</u>ay gridlines on screen</label>
+			</div>
+			<div>
+				<span>
+					<input type="checkbox" name="vertical_every_checkbox" id="vertical_every_checkbox" value="vertical_every" checked="checked" disabled="disabled" />
+					<label for="vertical_every_number">Vertical every:</label>
+				</span>
+				<span>
+					<input type="number" name="vertical_every_number" id="vertical_every_number" value="1" min="0" max="5" disabled="disabled" />
+				</span>
+			</div>
+			<div>	
+				<span>
+					<label for="vertical_every_number">Horizontal every:</label>
+				</span>
+				<span>
+					<input type="number" name="horizon_every_number" id="horizon_every_number" value="1" min="0" max="5" disabled="disabled" />				
+				</span>
+			</div>
+			<div>
+				<input type="checkbox" name="snap_to_grid_checkbox" id="snap_to_grid_checkbox" value="snap_to_grid" accesskey="s" />
+				<label for="snap_to_grid_checkbox"><u>S</u>nap objects to grid when the gridlines are not displayed</label>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="default_button" id="default_button" accesskey="e">Set as D<u>e</u>fault</button>
+				</span>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

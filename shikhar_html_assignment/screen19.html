@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Equation Options</title>
+	</head>
+	<body>
+		<form name="equation_form" id="equation_form">
+			<fieldset>
+				<legend>General</legend>
+				<div>
+					<label for="default_font_select">Default <u>f</u>ont for math regions:</label>
+					<select name="default_font_select" id="default_font_select" accesskey="f">
+							<option value="1">Cambria Math</option>
+					</select>
+				</div>
+				<div>	
+					<input type="checkbox" name="professional_checkbox" id="professional_checkbox" value="professional" checked="checked" />
+					<label for="professional_checkbox">Automatically convert expressions to professional format</label>
+				</div>
+				<div>	
+					<input type="checkbox" name="reduce_checkbox" id="reduce_checkbox" value="reduce" accesskey="z" />
+					<label for="reduce_checkbox">Reduce si<u>z</u>e of nested fractions in display equations</label>
+				</div>
+				<p>When copying an equation,</p>
+				<div>	
+					<input type="radio" name="copy_radio" id="mathml_radio" value="mathml" accesskey="p" />
+					<label for="mathml_radio">Copy MathML to the clipboard as <u>p</u>lain text</label>
+				</div>
+				<div>	
+					<input type="radio" name="copy_radio" id="linear_radio" value="linear" checked="checked" accesskey="n" />
+					<label for="linear_radio">Copy Li<u>n</u>ear Format to the clipboard as plain text</label>
+				</div>
+				<div>
+					<label for="break_select">B<u>r</u>eak lines with binary and relational operators:</label>
+					<select name="break_select" id="break_select" accesskey="r">
+						<option value="1">Before</option>
+					</select>
+				</div>
+				<div>
+					<label for="duplicate_select">Duplicate operators for subtraction as:</label>
+					<select name="duplicate_select" id="duplicate_select" disabled="disabled">
+						<option value="1">--</option>
+					</select>
+				</div>
+				<div>
+					<span>
+						<button type="button" name="auto_correct_button" id="auto_correct_button" accesskey="m"><u>M</u>ath Autocorrect...</button>
+					</span>
+					<span>
+						<button type="button" name="rec_button" id="rec_button" accesskey="e">R<u>e</u>cognized Functions...</button>
+					</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Display Math</legend>
+				<p>When building up integrals,</p>
+				<div>	
+					<input type="radio" name="limit_radio" id="side_radio" value="side" checked="checked" accesskey="s" />
+					<label for="side_radio">Place integral limits to the <u>s</u>ide</label>
+				</div>
+				<div>	
+					<input type="radio" name="limit_radio" id="center_radio" value="center" accesskey="w" />
+					<label for="center_radio">Place integral limits centered above and belo<u>w</u></label>
+				</div>
+				<p>When building up other n-ary operators,</p>
+				<div>	
+					<input type="radio" name="nary_radio" id="nary_side_radio" value="nary_side" accesskey="t" />
+					<label for="nary_side_radio">Place n-ary limi<u>t</u>s to the side</label>
+				</div>
+				<div>	
+					<input type="radio" name="nary_radio" id="nary_direct_radio" value="nary_direct" checked="checked" accesskey="v" />
+					<label for="nary_direct_radio">Place n-ary limits directly abo<u>v</u>e and below</label>
+				</div>
+				<div>	
+					<input type="checkbox" name="steps_checkbox" id="steps_checkbox" value="steps" checked="checked" accesskey="u" />
+					<label for="steps_checkbox"><u>U</u>se the following settings for math on its own line.</label>
+				</div>
+				<div>
+					<span>
+						<label for="left_margin_number"><u>L</u>eft Margin:</label>
+						<input type="number" name="left_margin_number" id="left_margin_number" value="0" min="0" max="100" accesskey="l" />
+					</span>
+					<span>
+						<label for="right_margin_number">Ri<u>g</u>ht Margin:</label>
+						<input type="number" name="right_margin_number" id="right_margin_number" value="0" min="0" max="100" accesskey="g" />
+					</span>
+				</div>
+				<p>Math margins are added to the paragraph margins.</p>
+				<div>
+					<label for="justification_select"><u>J</u>ustification:</label>
+					<select name="justification_select" id="justification_select" accesskey="j">
+							<option value="1">Centered as group</option>
+					</select>
+				</div>
+				<p>For math that wraps to a new line:</p>
+				<div>	
+					<span>
+						<input type="radio" name="wrap_radio" id="indent_radio" value="indent_side" checked="checked" accesskey="i" />
+						<label for="indent_radio"><u>I</u>ndent wrapped</label>
+					</span>
+					<span>
+						<label for="indent_number">lines by:</label>
+						<input type="number" name="indent_number" id="indent_number" value="1" min="0" max="100" />
+					</span>
+				</div>
+				<div>	
+					<input type="radio" name="wrap_radio" id="right_align_radio" value="right_align" accesskey="h" />
+					<label for="right_align_radio">Rig<u>h</u>t align wrapped lines</label>
+				</div>
+			</fieldset>
+				<div>
+					<span>
+						<button type="button" name="default_button" id="default_button" accesskey="d"><u>D</u>efaults...</button>
+					</span>
+					<span>
+						<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+					</span>
+					<span>
+						<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+					</span>
+				</div>
+		</form>
+	</body>
+</html>

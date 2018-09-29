@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data Validation</title>
+	</head>
+	<body>
+		<form name="data_valid_form" id="data_valid_form">
+			<ul>
+				<li>Settings</li>
+				<li>Input Message</li>
+				<li>Error Alert</li>
+			</ul>
+			<div>
+				<input type="checkbox" name="invalid_checkbox" id="invalid_checkbox" value="invalid" checked="checked" accesskey="s" />
+				<label for="invalid_checkbox"><u>S</u>how error alert after invalid data is entered</label>
+			</div>
+			<p>When user enters invalid data, show this error alert:</p>
+			<hr />
+			<div>
+				<label for="stop_select">St<u>y</u>le:</label>
+				<select name="stop_select" id="stop_select" accesskey="y">
+					<option value="1">Stop</option>
+				</select>
+			</div>
+			<div>
+				<label for="title_text"><u>T</u>itle:</label>
+				<input type="text" name="title_text" id="title_text" accesskey="t" />
+			</div>
+			<div>
+				<img src="image/data_val.png" alt="data_val.png" />
+			</div>
+			<div>
+				<label for="error_select"><u>E</u>rror message:</label>
+				<select name="error_select" id="error_select" accesskey="e" size="5" disabled="disabled"></select>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="clear_all_button" id="clear_all_button" accesskey="c"><u>C</u>lear All</button>
+				</span>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

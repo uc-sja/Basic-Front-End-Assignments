@@ -1,0 +1,25 @@
+.myCanvas
+{
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 50%;
+}
+.button_align
+{
+  margin: 20px auto 0;
+  width: 92%;
+}
+.btn
+{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}

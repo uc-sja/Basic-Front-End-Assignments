@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Format Cells</title>
+        <link style="text/css" rel="stylesheet" href="dialog2.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="dialog2.js"></script>
+    </head>
+    <body>
+        <div id="excel_help_dialog" class="excel_help_dialog">
+            <img src="image/dialog_close.png" alt="dialog_close.png" />
+            <a href="javascript:;" id="cross" class="crossed">
+                <img src="image/cross.png" alt="cross.png" />
+            </a>
+        </div>
+        <form name="format_cells_form" id="format_cells_form">
+            <div class="main" id="main_window">
+                <div class="title_head">
+                    <span class="title_txt">Format Cells</span>    
+                    <span class="close_btn rt">
+                        <a href="javascript:;" id="opener"><img  src="image/close11.png" alt="close.png" /></a><!--
+                     --><a href="javascript:;" id="close_win"><img  src="image/close12.png" alt="close.png" /></a>
+                    </span>
+                </div>
+                <div class="sub_main" id="tabs">
+                    <ul class="menu_tab margin_lt">
+                        <li class="common_tab tab1"><a href="#tabs-1">Number</a></li>
+                        <li class="common_tab alignment_tab tab2"><a href="#tabs-2"><div class="tab_dotted">Alignment</div></a></li>
+                        <li class="common_tab tab3"><a href="#tabs-3">Font</a></li>
+                        <li class="common_tab tab4"><a href="#tabs-4">Border</a></li>
+                        <li class="common_tab tab5"><a href="#tabs-5">Fill</a></li>
+                        <li class="common_tab tab6"><a href="#tabs-6">Protection</a></li>
+                    </ul>
+                    <div id="tabs-1" class="inner_container margin_lt">
+                        <img src="image/tab_four.png" alt="tab_one.png" />
+                    </div>
+                    <div id="tabs-2" class="inner_container margin_ltt">
+                        <fieldset class="orient rt">
+                            <legend class="margin_lt">Orientation</legend>
+                            <div class="images text_img">
+                                <a id="image_one" href="javascript:;" onfocus="imageFile();" onblur="imageFiles();"><img id="text_one" src="image/text1.png" alt="text.png" /></a>
+                                <a><img src="image/text2.png" alt="text.png" /></a>
+                            </div>
+                            <div class="degrees">
+                                <input type="number" class="degree_number margin_left" name="degree_number" id="degree_number" value="0" min="-90" max="90" oninput="degreeNumber(); enable_justify_checkbox();" accesskey="d" />
+                                <label for="degree_number"><u>D</u>egrees</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="fit">
+                            <legend>Text alignment</legend>
+                        </fieldset>
+                        <div class="user_choice">
+                            <div class="indent rt">
+                                <label class="indent_text" for="indent_number" id="indent_text">Indent:</label>
+                                <input type="number" class="indent_numb" name="indent_number" id="indent_number" oninput="indentNumber(); enable_justify_checkbox();" value="0" min="0" max="100" />
+                            </div>
+                            <div class="horizon">
+                                <label class="horizontal" for="horizontal_select"><u>H</u>orizontal:</label>
+                                <select name="horizontal_select" id="horizontal_select" class="horizon_select appear" onchange="verSelect(); enable_justify_checkbox();" accesskey="h">
+                                    <option value="1" selected="selected">General</option>
+                                    <option value="2">Left (Indent)</option>
+                                    <option value="3">Center</option>
+                                    <option value="4">Right (Indent)</option>
+                                    <option value="5">Fill</option>
+                                    <option value="6">Justify</option>
+                                    <option value="7">Center Across Selection</option>
+                                    <option value="8">Disributed (Indent)</option>
+                                </select>
+                            </div>                                
+                            <div class="vertical">
+                                <label class="ver" for="vertical_select"><u>V</u>ertical:</label>
+                                <select name="vertical_select" id="vertical_select" class="ver_select appear" accesskey="h" onchange="effectsCheckbox();">
+                                    <option value="1">Top</option>
+                                    <option value="2">Center</option>
+                                    <option value="3" selected="selected">Bottom</option>
+                                    <option value="5">Justify</option>
+                                    <option value="4">Disributed</option>
+                                </select>
+                            </div>
+                            <div class="justify">
+                                <input type="checkbox" class="checkbox_design justify_checkbox appear" name="justify_checkbox" id="justify_checkbox" value="justify" disabled="disabled" />
+                                <label class="justify_text" id="justify_text" for="justify_checkbox">Justify distributed</label>
+                            </div>
+                        </div>
+                        <fieldset class="fit">
+                            <legend>Text control</legend>
+                        </fieldset>
+                        <div class="user_control">
+                            <div class="wrap">
+                                <input type="checkbox" class="checkbox_design wrap_checkbox appear" name="wrap_checkbox" id="wrap_checkbox" value="wrap" onclick="effectsCheckbox();" />            
+                                <label for="wrap_checkbox"><u>W</u>rap text</label>
+                            </div>
+                            <div class="shrink">
+                                <input type="checkbox" class="checkbox_design shrink_checkbox appear" name="shrink_checkbox" id="shrink_checkbox" value="shrink" onclick="effectsCheckbox();"/>            
+                                <label for="shrink_checkbox" id="shrink">Shrin<u>k</u> to fit</label>
+                            </div>
+                            <div class="merge">
+                                <input type="checkbox" class="checkbox_design merge_checkbox appear" name="merge_checkbox" id="merge_checkbox" value="merge" onclick="effectsCheckbox();" />            
+                                <label for="merge_checkbox"><u>M</u>erge cells</label>
+                            </div>
+                        </div>
+                        <fieldset class="fit">
+                            <legend>Right-to-left</legend>
+                        </fieldset>
+                        <div class="rtl">
+                            <div class="context">
+                                <label id="text_dir" for="text_dir_select"><u>T</u>ext direction:</label>
+                                <select class="text_dir_select appear" name="text_dir_select" id="text_dir_select" accesskey="t">
+                                    <option value="1">Context</option>
+                                    <option value="2">Left-to-Right</option>
+                                    <option value="3">Right-to-left</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-3" class="inner_container margin_lt">
+                        <img src="image/tab_three.png" alt="tab_three.png" />
+                    </div>
+                    <div id="tabs-4" class="inner_container margin_lt">
+                        <img src="image/tab_four.png" alt="tab_four.png" />
+                    </div>                    
+                    <div id="tabs-5" class="inner_container margin_lt">
+                        <img src="image/tab_one.png" alt="tab_one.png">
+                    </div>                    
+                    <div id="tabs-6" class="inner_container margin_lt">
+                        <img src="image/tab_three.png" alt="tab_three.png">
+                    </div>                    
+                        <div class="btn_group rt">
+                        <span>
+                            <button type="button" name="ok_button" id="ok_button" class="bttn font_wt ok_button" autofocus="autofocus">OK</button>
+                        </span>
+                        <span>
+                            <button type="button" name="cancel_button" id="cancel_button" class="bttn font_wt cancel_button">Cancel</button>                    
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>    

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Setup</title>
+	</head>
+	<body>
+		<form name="page_setup_form" id="page_setup_form">
+			<ul>
+				<li>Page</li>
+				<li>Margins</li>
+				<li>Header/Footer</li>
+				<li>Sheet</li>
+			</ul>
+			<div>
+				<label for="print_area_text">Print <u>a</u>rea:</label>
+				<input type="text" name="print_area_text" id="print_area_text" accesskey="a" />
+				<span>
+					<img src="image/page_setup.png" alt="page_setup.png" />
+				</span>
+			</div>
+			<p>Print titles</p>
+			<hr />
+			<div>
+				<label for="rows_top_text"><u>R</u>ows to repeat at top:</label>
+				<input type="text" name="rows_top_text" id="rows_top_text" accesskey="r" />
+				<span>
+					<img src="image/page_setup.png" alt="page_setup.png" />
+				</span>
+			</div>
+			<div>
+				<label for="cols_left_text"><u>C</u>ols to repeat at left:</label>
+				<input type="text" name="cols_left_text" id="cols_left_text" accesskey="c" />
+				<span>
+					<img src="image/page_setup.png" alt="page_setup.png" />
+				</span>
+			</div>
+			<p>Print</p>
+			<hr />
+			<div>
+				<span>
+					<input type="checkbox" name="gridlines_checkbox" id="gridlines_checkbox" value="gridlines" accesskey="g" />
+					<label for="gridlines_checkbox"><u>G</u>ridlines</label>					
+				</span>
+				<span>
+					<input type="checkbox" name="black_white_checkbox" id="black_white_checkbox" value="black_white" accesskey="b" />
+					<label for="black_white_checkbox"><u>B</u>lack and white</label>					
+				</span>
+				<span>
+					<input type="checkbox" name="draft_quality_checkbox" id="draft_quality_checkbox" value="draft_quality" accesskey="q" />
+					<label for="draft_quality_checkbox">Draft <u>q</u>uality</label>					
+				</span>
+				<span>
+					<input type="checkbox" name="heading_checkbox" id="heading_checkbox" value="heading" accesskey="l" />
+					<label for="heading_checkbox">Row and co<u>l</u>unmn headings</label>					
+				</span>
+			</div>
+			<div>
+				<label for="comments_select">Co<u>m</u>ments:</label>
+				<select name="comments_select" id="comments_select" accesskey="m">
+						<option value="1">(None)</option>					
+					</select>
+			</div>
+			<div>
+				<label for="cell_error_select">Cell <u>e</u>rrors as:</label>
+					<select name="cell_error_select" id="cell_error_select" accesskey="e">
+						<option value="1">dislayed</option>					
+					</select>
+			</div>
+			<p>Page order</p>
+			<hr />
+			<div>
+				<input type="radio" name="page_order_radio" id="down_over_radio" value="down_over" accesskey="d" checked="checked">					
+				<label for="down_over_radio"><u>D</u>own, then over</label>
+			</div>
+			<div>
+				<input type="radio" name="page_order_radio" id="over_down_radio" value="over_down" accesskey="v">					
+				<label for="over_down_radio">O<u>v</u>er, then down</label>
+			</div>
+			<div>
+				<img src="image/page_order.png" alt="page_order.png" />
+			</div>
+			<div>
+				<span>
+					<button type="button" name="print_button" id="print_button" accesskey="p"><u>P</u>rint...</button>
+				</span>
+				<span>
+					<button type="button" name="preview_button" id="preview_button" accesskey="w">Print Previe<u>w</u></button>
+				</span>
+				<span>
+					<button type="button" name="option_button" id="option_button" accesskey="o"><u>O</u>ptions...</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

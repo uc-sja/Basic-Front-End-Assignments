@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Format Cells</title>
+		<link style="text/css" rel="stylesheet" href="screen5.css" />
+	</head>
+	<body>
+		<form name="format_cells_form" id="format_cells_form">
+			<div class="main">
+				<div class="title_head">
+					<span class="title_txt">Format Cells</span>	
+					<span class="close_btn rgt">
+						<a><img  src="image/close11.png" alt="close.png" /></a><!--
+					 --><a><img  src="image/close12.png" alt="close.png" /></a>
+					</span>
+				</div>
+				<div class="sub_main border_wide">
+					<ul class="menu_tab margin_lt">
+						<li class="tab1 mgr_nine bg_tab tab_rad mgrt">Number</li>
+						<li class="tab2 mgr_nine bg_tab tab_rad">Alignment</li>
+						<li class="tab3 tab_rad">Font</li>
+						<li class="tab4 mgr_nine bg_tab tab_rad mgrt">Border</li>
+						<li class="tab5 mgr_nine bg_tab tab_rad mgrt">Fill</li>
+						<li class="tab6 mgr_nine bg_tab tab_rad mgrt">Protection</li>
+					</ul>
+					<div class="inner_container cl_left mgr">
+						<div class="row_one">
+							<div class="fll font_div">
+								<div class="labl_gap">
+									<label for="cal_text"><u>F</u>ont:</label>
+								</div>
+								<div>
+									<input type="text" name="cal_text" id="cal_text" class="form_box cal_text txt_ind" value="Calibri" accesskey="f" />
+								</div>
+								<div class="select_box">
+									<select name="font_select" class="appear font_select main_select main_select_one form_box form_bor border_wide" id="font_select" size="6">
+										<option value="1" class="option_one">Cambria (Headings)</option>
+										<option value="2" class="focused option_two">Calibri(Body)</option>
+										<option value="3" class="option_three">Adobe Arabic</option>
+										<option value="4" class="option_three">Adobe Casion Pro</option>
+										<option value="5" class="option_three">Adobe Casion Pro Bold</option>
+										<option value="6" class="option_three">Adobe Devanagari</option>
+									</select>
+								</div>
+							</div>
+							<div class="fll font_style_div">
+								<div class="labl_gap">
+									<label for="font_style_text">F<u>o</u>nt style:</label>
+								</div>
+								<div>
+									<input type="text" name="font_style_text" id="font_style_text" class="font_style_text txt_ind form_box" accesskey="o" value="Regular" />
+								</div>
+								<div>
+									<select size="6" name="font_style_select" id="font_style_select" class="txt_ind main_select main_select_two form_box form_bor border_wide font_style_select txt_ind">
+										<option value="1" class="focused foc_width_two">Regular</option>
+										<option value="2" class="style_width">Italic</option>
+										<option value="3" class="style_width">Bold</option>
+										<option value="4" class="style_width">Bold Italic</option>
+									</select>
+								</div>
+							</div>
+							<div class="fll">
+								<div class="labl_gap">
+									<label for="font_size_text"><u>S</u>ize:</label>
+								</div>
+								<div>
+									<input type="text" name="font_size_text" id="font_size_text" class="txt_ind font_size_text form_box" accesskey="s" value="11" />
+								</div>
+								<div>
+									<select size="6" name="font_size_select" id="font_size_select" class="form_box form_bor border_wide main_select main_select_three font_size_select">
+										<option value="1">8</option>
+										<option value="2">9</option>
+										<option value="3">10</option>
+										<option value="4" class="focused foc_width_three">11</option>
+										<option value="5">12</option>
+										<option value="6">14</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row_two cl_left">
+							<div class="font_und font_div fll">
+								<div class="labl_gap">
+									<label for="und_select"><u>U</u>nderline:</label>
+								</div>
+								<div>
+									<select name="und_select" id="und_select" class="appear none_select und_select form_box" accesskey="u">
+										<option value = "1">None</option>
+									</select>
+								</div>
+							</div>
+							<div class="font_col font_style_div fll">
+								<div class="labl_gap">
+									<label for="col_select"><u>C</u>olor:</label>
+								</div>
+								<div>
+									<select name="col_select" id="col_select" class="txt_ind appear und_select col_select" accesskey="c"></select>
+								</div>										
+							</div>
+							<div class="fll col_check">
+								<div class="height_adjust"></div>
+								<div>
+									<input type="checkbox" class="appear" name="normal_checkbox" id="normal_checkbox" value="normal" accesskey="n"/>								
+									<label for="normal_checkbox"><u>N</u>ormal font</label>
+								</div>
+							</div>		
+						</div>
+						<div class="row_three cl_left">
+							<fieldset class="effects field fll">
+								<legend>Effects</legend>
+								<div class="field_pad">
+									<div class="strikethrough_check labl_gap">
+										<input type="checkbox" class="appear strikethrough_checkbox" id="strikethrough_checkbox" value="strike_through" accesskey="k" />
+										<label for="strikethrough_checkbox"><span></span>Stri<u>k</u>ethrough</label>
+									</div>
+									<div class="superscript_check labl_gap">
+										<input type="checkbox" class="appear" name="superscript_checkbox" id="superscript_checkbox" value="superscript" accesskey="p" />
+										<label for="superscript_checkbox">Su<u>p</u>erscript</label>
+									</div>
+									<div class="subscript_check">
+										<input type="checkbox" class="appear" name="subscript_checkbox" id="subscript_checkbox" value="subscript" accesskey="b" />
+										<label for="subscript_checkbox">Su<u>b</u>script</label>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="preview field fll">
+								<legend>Preview</legend>
+								<div class="alpha">
+									<img src="image/screen5f.png" alt="screen5f.png" />
+								</div>
+							</fieldset>
+						</div>	
+						<div class="row_four cl_left">
+							This is a TrueType font. The same font will be used on both your printer and your screen.							</div>
+						</div>
+						<div class="btn_group rgt">
+						<span>
+							<button type="button" name="ok_button" id="ok_button" class="bttn font_wt ok_button" autofocus="autofocus">OK</button>
+						</span>
+						<span>
+							<button type="button" name="cancel_button" id="cancel_button" class="bttn font_wt cancel_button">Cancel</button>					
+						</span>
+					</div>
+				</div>	
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="outer_div">
+                <div class="main_div">
+                    <ul class="unstyle">
+                        <div onclick="SwitchTabs(event, 'tab_content', 'tab_one'); SwitchBorder('tab_borders','tab_border', '0', '-100%');" class="tab_first common_tab" id="tab_first" >
+                            <li>TAB A</li>
+                            <div class="tab_borders" id="tab_borders"></div>
+                        </div>
+                        <div onclick="SwitchTabs(event, 'tab_content', 'tab_two'); SwitchBorder('tab_borders','tab_border', '100%', '0');" class="active tab_second common_tab" id="tab_second">    
+                            <li>TAB B</li>
+                            <div class="tab_border" id="tab_border"></div>
+                        </div>
+                    </ul>
+                    <div id="tab_one" class="tab_content show">
+                        <h2>Controllable Tab A</h2>    
+                        <p>Tabs are also controllable if you want to programmatically pass them their values. This allows for more functionality in Tabs such as not having any Tab selected or assigning them different values.</p>
+                    </div>
+                    <div id="tab_two" class="tab_content">
+                        <h2>Controllable Tab B</h2>    
+                        <p>This is another example of a controllable tab. Remember, if you use controllable Tabs, you need to give all of your tabs values or else you wont be able to select them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="outer_div">
+                <div class="main_div">
+                    <ul class="unstyle">
+                        <div onclick="SwitchTabs(event, 'tab_content_two', 'tab_three'); SwitchBorder('tab_borders_second', 'tab_border_second', '-100%', '0');" class="tab_first common_tab" id="tab_first" >
+                            <li class="">TAB A</li>
+                            <div class="tab_border_second" id="tab_border_second"></div>    
+                        </div>
+                        <div onclick="SwitchTabs(event, 'tab_content_two', 'tab_four'); SwitchBorder('tab_borders_second','tab_border_second', '0', '100%');" class="active tab_second common_tab" id="tab_second">    
+                            <li class="">TAB B</li>
+                            <div class="tab_borders_second" id="tab_borders_second"></div>
+                        </div>
+                    </ul>
+                    <div id="tab_three" class="tab_content_two">
+                        <h2>Controllable Tab A</h2>    
+                        <p>Tabs are also controllable if you want to programmatically pass them their values. This allows for more functionality in Tabs such as not having any Tab selected or assigning them different values.</p>
+                    </div>
+                    <div id="tab_four" class="tab_content_two show">
+                        <h2>Controllable Tab B</h2>        
+                        <p>This is another example of a controllable tab. Remember, if you use controllable Tabs, you need to give all of your tabs values or else you wont be able to select them.</p>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+        <pre>
+            @font-face {
+              font-family: roboto-bold;
+              src: url("Roboto-Bold.ttf");
+            }
+
+            @font-face {
+              font-family: roboto-regular;
+              src: url("Roboto-Regular.ttf");
+            }
+
+            @mixin set-font-family($font-name) {
+              font-family: $font-name;
+            }
+
+            @mixin set-spacing($margin, $padding) {
+              margin: $margin;
+              padding: $padding;
+            }
+
+            @mixin set-dimension($width, $height) {
+              height: $height;
+              width: $width;
+            }
+
+            @mixin transform($trans) {
+              transform: $trans;
+            }
+
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            @mixin set-back($back) {
+              background-color: $back;
+            }
+
+            @mixin float($float) {
+              float: $float;
+            }
+
+            @mixin pos($position, $top: "", $right: "", $bottom: "", $left: "") {
+              position: $position;
+              top: #{ $top };
+              right: #{ $right };
+              bottom: #{ $bottom };
+              left: #{ $left };
+            }
+
+            .list-border {
+              @include set-dimension(100%, 513px);
+              @include set-spacing(20px, 0);
+              max-width:360px;
+              border: 1px solid #D9D9D9;
+              border-bottom: none;
+            }
+
+            .inner-container {
+              padding: 8px 0;
+              .outer-tab {
+                @include set-font-family("roboto-regular");
+                @include set-spacing(0, 0);
+                color: rgba(0, 0, 0, 0.87);
+              }
+              .list-box {
+                padding: 12px 16px 12px 20px;
+                @include pos(relative);
+                overflow: hidden;
+                &:hover {
+                  @include set-back(rgba(0, 0, 0, 0.1)); 
+                }
+                .tab-icon {
+                  font-size: 20px;
+                  color: rgb(117, 117, 117);
+                }
+                .tab-text {
+                  font-size: 18px;
+                  margin-left: 20px;
+                  padding-left: 11px;  
+                }
+              }
+            }
+
+            .sent-icon {
+              @include transform(rotate(68deg));
+            }
+
+            .divider {
+              @include set-back(rgba(224, 224, 224, 1));
+              @include set-spacing(0, 0);
+              height: 1px;
+              border: none;
+            }
+
+            .info-icon {
+              @include float(right);
+              font-size: 22px;
+              color: rgb(117, 117, 117);
+            }
+              
+            .info-text {
+              font-size: 18px;
+            }
+
+            .ruler {
+              @include pos(relative, "", "", 30px, 20px);
+              max-width: 360px;
+            }
+
+            .ripple {
+              border-radius: 50%;
+              @include set-back(rgba(211, 211, 211, 0.9));
+              @include transform(scale(1,0));
+              @include pos(absolute);
+            }
+
+            .rippleEffect {
+              animation: rippleDrop 0.5s linear;
+            }
+
+            @keyframes rippleDrop {
+              100% {
+                @include transform(scale(1.5,3));
+                opacity: 0;
+              }
+            }
+        </pre>
+        <script src="script1.js"></script>
+    </body>
+</html>    
+

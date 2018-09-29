@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Format Cells</title>
+        <link style="text/css" rel="stylesheet" href="dialog1.css" />        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="dialog1.js"></script>
+    </head>
+    <body>    
+        <div id="excel_help_dialog" class="excel_help_dialog">
+            <img src="image/dialog_close.png" alt="dialog_close.png" />
+            <a href="javascript:;" id="cross" class="crossed">
+                <img src="image/cross.png" alt="cross.png" />
+            </a>
+        </div>
+        <form name="format_cells_form" id="format_cells_form">
+            <div class="main" id="main_window">
+                <div class="title_head">
+                    <span class="title_txt">Format Cells</span>    
+                    <span class="close_btn rgt">
+                        <a  id = "opener" href="javascript:;"><img src="image/close11.png" alt="close11.png"/></a><!--
+                     --><a href="javascript:close_It();"><img src="image/close12.png" alt="close12.png"/></a>
+                    </span>
+                </div>    
+                <div class="sub_main" id="tabs">
+                    <ul class="menu_tab margin_lt">
+                        <li class="number_tab number_tab_adjust" id="tab_one"><a href="#tabs-1"><div class="tab_dotted">Number</div></a></li>
+                        <li class="common_tab tab2 mgr_ten" id="tab_two"><a href="#tabs-2">Alignment</a></li>
+                        <li class="common_tab tab3 mgr_ten" id="tab_three"><a href="#tabs-3">Font</a></li>
+                        <li class="common_tab tab4 mgr_ten" id="tab_four"><a href="#tabs-4">Border</a></li>
+                        <li class="common_tab tab5 mgr_ten" id="tab_five"><a href="#tabs-5">Fill</a></li>
+                        <li class="common_tab tab6 mgr_ten" id="tab_six"><a href="#tabs-6">Protection</a></li>
+                    </ul>
+                    <div id="tabs-1" class="inner_container margin_lt">
+                        <div class="cat_label margin_left">
+                            <div class="cat_labell mgr_ten"><u>C</u>ategory:</div>
+                        </div>
+                        <select class="category ht margin_left" name="general_select" id="general_select" size="12" onchange="mySelect();">
+                            <option value="1" selected="selected" class="general_cat">General</option>
+                            <option value="2">Number</option>
+                            <option value="3">Currency</option>
+                            <option value="4">Accounting</option>
+                            <option value="5">Date</option>
+                            <option value="6">Time</option>
+                            <option value="7">Percentage</option>
+                            <option value="8">Fraction</option>
+                            <option value="9">Scientific</option>
+                            <option value="10">Text</option>
+                            <option value="11">Special</option>
+                            <option value="12">Custom</option>
+                        </select>
+                        <div class="field_con">
+                            <div class="fi_con">
+                                <fieldset class="sample_field">
+                                    <legend class="font_wt margin_lt">Sample</legend>
+                                </fieldset>
+                                <div class="para font_wt">General format cells have no specific number format.</div>    
+                                <div id="addon" class="display_h para font_wt">
+                                    <div class="dec">
+                                        <label for="decimal_number"><u>D</u>ecimal Places:</label>
+                                        <input class="degree_number" type="number" min="0" max="30" name="decimal_number"  id="decimal_number" value="2" accesskey="d" />
+                                    </div>
+                                    <div>
+                                        <div class="para" id="seperator">
+                                            <input type="checkbox" class="sep_check" name="sep_checkbox" id="sep_checkbox" value="seperator" accesskey="u" checked="checked"/>
+                                            <label for="sep_checkbox"><u>U</u>se 1000 Seperator (,)</label>
+                                        </div>                                        
+                                        <div class="para" id="symbol">
+                                            <label for="sep_checkbox"><u>S</u>ymbol:</label>
+                                            <select class="symbol_select" name="symbol_select" id="symbol_select" accesskey="s">
+                                                <option value="1">None</option>
+                                                <option value="2" selected="selected">$</option>
+                                                <option value="3">֏ Armenian (Armenia)</option>
+                                                <option value="4">₼ Azerbaijani (Cyrillic, Azerbaijan)</option>
+                                                <option value="5">₼ Azerbaijani (Latin, Azerbaijan)</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
+                                    <div id="negative">
+                                        <div class="para">
+                                            <label for="neg_select"><u>N</u>egative Numbers:</label>
+                                        </div>
+                                        <div class="para">
+                                            <select class="neg_select" name="neg_select" id="neg_select" size="10">
+                                                <option value="1" selected="selected">-1,234.10</option>
+                                                <option value="2">1,234.10</option>
+                                                <option value="3">(1,234.10)</option>
+                                                <option value="4">(1,234.10)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="display_h">Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary value.</div>
+                    </div>
+                    <div id="tabs-2" class="inner_container margin_lt">
+                        <img src="image/tab_two.png" alt="tab_two.png" />
+                    </div>
+                    <div id="tabs-3" class="inner_container margin_lt">
+                        <img src="image/tab_three.png" alt="tab_three.png"> 
+                    </div>
+                    <div id="tabs-4" class="inner_container margin_lt">
+                        <img src="image/tab_four.png" alt="tab_four.png">
+                    </div>                    
+                    <div id="tabs-5" class="inner_container margin_lt">
+                        <img src="image/tab_three.png" alt="tab_three.png">
+                    </div>                    
+                    <div id="tabs-6" class="inner_container margin_lt">
+                        <img src="image/tab_two.png" alt="tab_two.png">
+                    </div>                    
+                    <div class="btn_group rgt">
+                        <span>
+                            <button type="button" onclick="close_It();" name="ok_button" id="ok_button" class="bttn font_wt ok_button" autofocus="autofocus">OK</button>
+                        </span>
+                        <span>
+                            <button type="button" onclick="close_It();" name="cancel_button" id="cancel_button" class="bttn font_wt cancel_button">Cancel</button>
+                        </span>
+                    </div>
+                </div>    
+            </div>
+        </form>
+    </body>
+</html> 

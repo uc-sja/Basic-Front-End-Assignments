@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Columns</title>
+	</head>
+	<body>
+		<form name="colunmn_form" id="colunmn_form">
+			<fieldset>
+				<legend>Presets</legend>
+					<figure>
+						<img src="image/preset_one.png" alt="preset_one.png" />
+						<figcaption><u>O</u>ne</figcaption>
+					</figure>
+					<figure>
+						<img src="image/preset_two.png" alt="preset_two.png" />
+						<figcaption>T<u>w</u>o</figcaption>
+					</figure>
+					<figure>
+						<img src="image/preset_three.png" alt="preset_three.png" />
+						<figcaption><u>T</u>hree</figcaption>
+					</figure>
+					<figure>
+						<img src="image/preset_left.png" alt="preset_left.png" />
+						<figcaption><u>L</u>eft</figcaption>
+					</figure>
+					<figure>
+						<img src="image/preset_right.png" alt="preset_right.png" />
+						<figcaption><u>R</u>ight</figcaption>
+					</figure>
+			</fieldset>
+			<div>
+				<div>
+					<label for="column_number"><u>N</u>umber of columns:</label>
+					<input type="number" name="column_number" id="column_number" value="1" min="1" max="5" accesskey="n" />
+				</div>
+				<div>
+					<input type="checkbox" name="line_checkbox" id="line_checkbox" value="line" disabled="disabled" />
+					<label for="line_checkbox">Line between</label>
+				</div>
+			</div>
+			<fieldset>
+				<legend>Width and spacing</legend>
+				<div>
+					<span>
+						<label for="col1_text"><u>C</u>ol#:</label>
+						<input type="text" name="col1_text" id="col1_text" value="1:" accesskey="c" disabled="disabled" />
+					</span>
+					<span>
+						<input type="text" name="col2_text" id="col2_text" disabled="disabled" />
+					</span>
+					<span>
+						<input type="text" name="col3_text" id="col3_text" disabled="disabled" />
+					</span>
+				</div>
+				<div>
+					<span>
+						<label for="width_number">W<u>i</u>dth:</label>
+						<input type="number" name="width_number" id="width_number" value="6.5" min="0" max="100" step="0.1" accesskey="i" />
+					</span>
+					<span>
+						<input type="number" name="width2_number" id="width2_number" min="0" max="100" step="0.1" disabled="disabled" />
+					</span>
+					<span>
+						<input type="number" name="width3_number" id="width3_number" min="0" max="100" step="0.1" disabled="disabled" />
+					</span>
+				</div>
+				<div>					
+					<span>
+						<label for="space_number"><u>S</u>pacing:</label>
+						<input type="number" name="space_number" id="space_number" min="0" max="100" step="0.1" accesskey="s" disabled="disabled" />
+					</span>
+					<span>
+						<input type="number" name="space2_number" id="space2_number" min="0" max="100" step="0.1" disabled="disabled" />
+					</span>
+					<span>
+						<input type="number" name="space3_number" id="space3_number" disabled="disabled" min="0" max="100" step="0.1" />
+					</span>
+				</div>
+				<div>
+					<input type="checkbox" name="equal_column_checkbox" id="equal_column_checkbox" checked="checked" value="equal_column" disabled="disabled" />
+					<label for="equal_column_checkbox">Equal column width</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Preview</legend>
+				<center>
+					<img src="image/screen9_preview.png" alt="screen9_preview.png" />
+				</center>
+			</fieldset>
+			<div>
+				<label for="whole_select"><u>A</u>pply to:</label>
+				<select name="whole_select" id="whole_select" accesskey="a">
+						<option value="1">Whole document</option>
+				</select>
+			</div>
+			<div>
+				<input type="checkbox" name="start_new_checkbox" id="start_new_checkbox" value="start_new" disabled="disabled" />
+				<label for="start_new_checkbox">Start new column</label>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

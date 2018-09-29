@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Setup</title>
+	</head>
+	<body>
+		<form name="page_setup_form" id="page_setup_form">
+			<ul>
+				<li>Page</li>
+				<li>Margins</li>
+				<li>Header/Footer</li>
+				<li>Sheet</li>
+			</ul>
+			<p>Orientation</p>
+			<hr />
+			<div>
+				<span>
+					<img src="image/potrait.png" alt="potrait.png" />					
+				</span>
+				<span>
+					<input type="radio" name="orientation_radio" id="potrait_radio" value="potrait" checked="checked" accesskey="t" />
+					<label for="potrait_radio">Po<u>t</u>rait</label>
+				</span>
+				<span>
+					<img src="image/landscape.png" alt="landscape.png" />					
+				</span>
+				<span>
+					<input type="radio" name="orientation_radio" id="landscape_radio" value="landscape" accesskey="l" />
+					<label for="landscape_radio"><u>L</u>andscape</label>
+				</span>
+			</div>
+			<p>Scaling</p>
+			<hr />
+			<div>
+				<span>
+					<input type="radio" name="scaling_radio" id="adjust_to_radio" value="adjust_to" checked="checked" accesskey="a" />
+					<label for="adjust_to_radio"><u>A</u>djust to:</label>	
+				</span>
+				<span>
+					<input type="number" name="percent_of_number" id="percent_of_number" value="100" min="1" max="100" />
+					<label for="percent_of_number">% normal size</label>	
+				</span>				
+			</div>
+			<div>
+				<span>
+					<input type="radio" name="scaling_radio" id="fit_to_radio" value="fit_to" accesskey="f" />
+					<label for="fit_to_radio"><u>F</u>it to:</label>	
+				</span>
+				<span>
+					<input type="number" name="page_width_number" id="page_width_number" value="1" min="1" max="100" />
+					<label for="page_width_number">page(s) wide by</label>
+				</span>
+				<span>
+					<input type="number" name="page_len_number" id="page_len_number" value="1" min="1" max="100" />
+					<label for="page_len_number">tall</label>
+				</span>
+			</div>
+			<hr />
+			<div>
+				<label for="paper_size_select">Paper si<u>z</u>e:</label>
+				<select name="paper_size_select" id="paper_size_select" accesskey="z">
+					<option value="1">Letter</option>
+				</select>
+			</div>
+			<div>
+				<label for="print_quality_select">Print <u>q</u>uality:</label>
+				<select name="print_quality_select" id="print_quality_select" accesskey="q">
+					<option value="1">90 dpi</option>
+				</select>
+			</div>
+			<div>
+				<label for="first_page_text">Fi<u>r</u>st page number:</label>
+				<input type="text" name="first_page_text" id="first_page_text" value="Auto" accesskey="r" />
+			</div>
+			<div>
+				<span>
+					<button type="button" name="print_button" id="print_button" accesskey="p"><u>P</u>rint...</button>
+				</span>
+				<span>
+					<button type="button" name="preview_button" id="preview_button" accesskey="w">Print Previe<u>w</u></button>
+				</span>
+				<span>
+					<button type="button" name="option_button" id="option_button" accesskey="o"><u>O</u>ptions...</button>
+				</span>
+			</div>
+			<div>
+				<span>
+					<button type="button" name="ok_button" id="ok_button" autofocus="autofocus">OK</button>
+				</span>
+				<span>
+					<button type="button" name="cancel_button" id="cancel_button">Cancel</button>
+				</span>
+			</div>			
+		</form>
+	</body>
+</html>
